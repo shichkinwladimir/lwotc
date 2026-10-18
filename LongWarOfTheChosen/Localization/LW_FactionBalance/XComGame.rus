@@ -1,21 +1,21 @@
 ; LWOTC Translated
 [LingeringShadow X2AbilityTemplate]
 LocFriendlyName="Длительная Тень"
-LocLongDescription="Бонус +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению Жнеца на один ход после потери Тени."
-LocHelpText="Бонус +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению Жнеца на один ход после потери Тени."
-LocPromotionPopupText="<Bullet/> Бонус +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению Жнеца на один ход после потери Тени, даже в случае истечения действия эффекта Тени.<br/><Bullet/> Действует до начала следующего хода."
+LocLongDescription="Когда <Ability:ClassName> теряет Тень, на один ход получает +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению."
+LocHelpText="Когда <Ability:ClassName> теряет Тень, на один ход получает +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению."
+LocPromotionPopupText="<Bullet/> Сразу после потери Тени <Ability:ClassName> получает +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению — при выходе из скрытности или по окончании действия Тени.<br/><Bullet/> Эффект действует до начала следующего хода XCOM."
 
-; LWOTC Translated
+; LWOTC Translated (2)
 [LingeringShadowTrigger X2AbilityTemplate]
 LocFriendlyName="Длительная Тень"
-LocLongDescription="Бонус +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению Жнеца на один ход после потери Тени."
-LocHelpText="Бонус +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению Жнеца на один ход после потери Тени."
-; End Translation (2)
+LocLongDescription="Когда <Ability:ClassName> теряет Тень, на один ход получает +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению."
+LocHelpText="Когда <Ability:ClassName> теряет Тень, на один ход получает +<Ability:LingeringShadowDefenseBonus/> к защите и +<Ability:LingeringShadowDodgeBonus/> к уклонению."
+; End translation (2)
 
 [Demolitionist X2AbilityTemplate]
 LocFriendlyName="Взрыватель"
-LocLongDescription="Жнец получает +<Ability:DemolitionistExtraChargeCount/> зарядов к Детонатору и Самонаводящейся мине."
-LocHelpText="Жнец получает +<Ability:DemolitionistExtraChargeCount/> зарядов к Детонатору и Самонаводящейся мине."
+LocLongDescription="<Ability:ClassName> получает +<Ability:DemolitionistExtraChargeCount/> заряд для «Удалённого запуска» и самонаводящейся мины."
+LocHelpText="<Ability:ClassName> получает +<Ability:DemolitionistExtraChargeCount/> заряд для «Удалённого запуска» и самонаводящейся мины."
 LocPromotionPopupText="<Bullet/> Жнец получает +<Ability:DemolitionistExtraChargeCount/> зарядов к Детонатору и Самонаводящейся мине.<br/>"
 
 [CripplingStrike X2AbilityTemplate]
@@ -23,7 +23,7 @@ LocFriendlyName="Калечащий бросок"
 LocLongDescription="Бросок ножа калечит цель на один ход (нулевая мобильность)."
 LocHelpText="Бросок ножа калечит цель на один ход (нулевая мобильность)."
 LocPromotionPopupText="<Bullet/> Бросок ножа не сбрасывает Тень.<br/><Bullet/> Покалеченные враги имеют 0 мобильности и не могут двигаться.<br>"
-; End Translated
+; End translation
 
 ; LWOTC Translated
 [Distraction_LW X2AbilityTemplate]
@@ -34,27 +34,30 @@ LocPromotionPopupText="<Bullet/> Добавляет эффект дезорие�
 
 [DisablingShot X2AbilityTemplate]
 LocFriendlyName="Оглушающий выстрел"
-LocLongDescription="Выстрел, оглушающий врагов, но не наносящий урона. Критическое попадание добавляет время оглушения, но урона всё равно не наносит."
-LocHelpText="Выстрел, только оглушающий врагов. Критический удар добавляет время оглушения. Не наносит критический урон."
-LocPromotionPopupText="<Bullet/> Оглушает врагов на <Ability:DisablingShotStunActions/> действий при попадании (включая царапины).<br/><Bullet/> Оглушает дополнительно на  <Ability:DisablingShotCritStunActions/> действий при криттческом попадании, не наносит критический урон.<br/><Bullet/> Оглушающий выстрел требует <Ability:SelfAmmoCost/> ед. боекомплекта, ходов до перезарядки: <Ability:SelfCooldown/>.<br/><Bullet/> Только Аватар и Пси-зомби не могут быть оглушены."
+LocLongDescription="Выстрел наносит на <Ability:DisablingShotDamagePenalty>% меньше урона, но при попадании оглушает цель. Критическое попадание не наносит дополнительного урона, зато оглушение длится дольше."
+LocHelpText="Оглушает цель на <Ability:DisablingShotStunActions> действия. Критические попадания не наносят дополнительного урона, но увеличивают длительность оглушения до <Ability:DisablingShotCritStunActions> действий."
+; LWOTC Translated (2)
+LocPromotionPopupText="<Bullet/> При попадании оглушает цель на <Ability:DisablingShotStunActions/> действия, даже при касательном попадании.<br/><Bullet/> При критическом попадании оглушение длится на <Ability:DisablingShotCritStunActions/> действий дольше, но критический урон не наносится.<br/><Bullet/> Для выстрела «Отключающий выстрел» требуется <Ability:SelfAmmoCost/> боеприпасов.<br/><Bullet/> Перезарядка «Отключающего выстрела» составляет <Ability:SelfCooldown_LW/> хода.<br/><Bullet/> Нельзя использовать против врагов с иммунитетом к оглушению.<br/>"
+; End translation (2)
 
 [DisablingShotSnapShot X2AbilityTemplate]
 LocFriendlyName="Оглушающий выстрел"
-LocLongDescription="Выстрел, оглушающий врагов, но не наносящий урона. Критическое попадание добавляет время оглушения, но урона всё равно не наносит."
-LocHelpText="Выстрел, только оглушающий врагов. Критический удар добавляет время оглушения. Не наносит критический урон."
-LocPromotionPopupText="<Bullet/> Оглушает врагов на <Ability:DisablingShotStunActions/> действий при попадании (включая царапины).<br/><Bullet/> Оглушает дополнительно на  <Ability:DisablingShotCritStunActions/> действий при криттческом попадании, не наносит критический урон.<br/><Bullet/> Оглушающий выстрел требует <Ability:SelfAmmoCost/> ед. боекомплекта, ходов до перезарядки: <Ability:SelfCooldown/>.<br/><Bullet/> Только Аватар и Пси-зомби не могут быть оглушены."
-
+LocLongDescription="Выстрел наносит на <Ability:DisablingShotDamagePenalty>% меньше урона, но при попадании оглушает цель. Критическое попадание не наносит дополнительного урона, зато оглушение длится дольше."
+LocHelpText="Оглушает цель на <Ability:DisablingShotStunActions> действия. Критические попадания не наносят дополнительного урона, но оглушают на <Ability:DisablingShotCritStunActions> действий."
+; LWOTC Translated (2)
+LocPromotionPopupText="<Bullet/> При попадании оглушает цель на <Ability:DisablingShotStunActions/> действия, даже при касательном попадании.<br/><Bullet/> При критическом попадании оглушение длится на <Ability:DisablingShotCritStunActions/> действий дольше, но критический урон не наносится.<br/><Bullet/> Для выстрела «Отключающий выстрел» требуется <Ability:SelfAmmoCost/> боеприпасов.<br/><Bullet/> Перезарядка «Отключающего выстрела» составляет <Ability:SelfCooldown_LW/> хода.<br/><Bullet/> Нельзя использовать против врагов с иммунитетом к оглушению.<br/>"
+; End translation (2)
 
 [Meditation X2AbilityTemplate]
 LocFriendlyName="Медитация"
-LocLongDescription="Увеличивает на <Ability:MeditationFocusRecovery/> концентрацию Храмовника. Зарядов вначале 0, получает заряд за каждое убийство Храмовником."
-LocHelpText="Увеличивает концентрацию Храмовника на <Ability:MeditationFocusRecovery/>."
-LocPromotionPopupText="<Bullet/> Добавляет <Ability:MeditationFocusRecovery/> ед. концентрации Храмовнику.<br/><Bullet/> Заканчивает ход.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown/>."
+LocLongDescription="Добавляет <Ability:ClassName> до <Ability:MeditationFocusRecovery/> единиц концентрации. Изначально зарядов нет; за каждое убийство <Ability:ClassName> получает один заряд."
+LocHelpText="Добавляет <Ability:ClassName> до <Ability:MeditationFocusRecovery/> единиц концентрации. Изначально зарядов нет; за каждое убийство <Ability:ClassName> получает один заряд."
+LocPromotionPopupText="<Bullet/> Добавляет <Ability:ClassName> <Ability:MeditationFocusRecovery/> ед. концентрации.<br/><Bullet/> Завершает ход.<br/><Bullet/> Перезарядка — <Ability:SelfCooldown/> ход(а)."
 
 [Overcharge_LW X2AbilityTemplate]
 LocFriendlyName="Заряженность"
-LocLongDescription="Дает бонус к Меткости и Шансу критического попадания за каждую единицу концентрации Храмовника."
-LocHelpText="Дает бонус к Меткости и Шансу критического попадания за каждую единицу концентрации Храмовника."
+LocLongDescription="За каждую единицу концентрации <Ability:ClassName> получает бонус к меткости и шансу критического попадания в ближнем бою."
+LocHelpText="За каждую единицу концентрации <Ability:ClassName> получает бонус к меткости и шансу критического попадания в ближнем бою."
 LocPromotionPopupText="<Bullet/> Каждая единица дает бонус в +<Ability:OverchargeAimBonus/> к меткости и +<Ability:OverchargeCritBonus/> к шансу критического попадания.<br/><Bullet/> Рассчитывается по текущему (а не максимальному) показателю концентрации."
 
 [VoltDangerZone X2AbilityTemplate]
@@ -62,7 +65,7 @@ LocFriendlyName="Высокое напряжение"
 LocLongDescription="Прибавляет <Ability:VoltDangerZoneBonus/> клеток радиуса поражения способности \"Вольт\"."
 LocHelpText="Прибавляет <Ability:VoltDangerZoneBonus/> клеток радиуса поражения способности \"Вольт\"."
 LocPromotionPopupText="<Bullet/> Прибавляет <Ability:VoltDangerZoneBonus/> клеток радиуса поражения способности \"Вольт\"."
-; End Translated
+; End translation
 
 ; LWOTC Translated
 [TemplarVigilance X2AbilityTemplate]
@@ -70,23 +73,30 @@ LocFriendlyName="Бдительность"
 LocLongDescription="Получает 1 ед. концентрации при активации группы противника от 3 противников и больше."
 LocHelpText="Получает 1 ед. концентрации при активации группы противника от 3 противников и больше."
 ; LWOTC Translated (2)
-LocPromotionPopupText="<Bullet/> Получает 1 ед. концентрации, когда обнаруженные враги активируются.<br/><Bullet/> Сработает только в случае, если в группе врагов 3 или больше бойцов.<br/><Bullet/> Бонус теряется, если уже была достигнута максимальная концентрация."
-; End Translated (2)
+LocPromotionPopupText="<Bullet/> Добавляет 1 единицу концентрации <Ability:ClassName>, когда группа врагов разбегается после обнаружения.<br/><Bullet/> Срабатывает, только если в группе не менее 3 бойцов.<br/><Bullet/> Если концентрация уже максимальна, дополнительная единица пропадает."
+; End translation (2)
 
 [TemplarTerror X2AbilityTemplate]
 LocFriendlyName="Устрашение"
-LocLongDescription="Противники могут запаниковать после атаки \"Вольтом\"."
-LocHelpText="Противники могут запаниковать после атаки \"Вольтом\"."
-LocPromotionPopupText="<Bullet/> Противники могут запаниковать после атаки \"Вольтом\".<br/><Bullet/> Шанс паники зависит от разницы между пси-атакой Храмовника и волей противника"
+LocLongDescription="Увеличивает радиус «Разряда» на <Ability:VoltDangerZoneBonus/> клеток. Попавшие под «Разряд» враги могут впасть в панику."
+LocHelpText="Увеличивает радиус «Разряда» на <Ability:VoltDangerZoneBonus/> клеток. Попавшие под «Разряд» враги могут впасть в панику."
+; LWOTC Translated (2)
+LocPromotionPopupText="<Bullet/> «Разряд» теперь может вызвать у врага панику.<br/><Bullet/> Вероятность паники составляет <Ability:TERROR_STAT_CHECK_BASE_VALUE/>% и зависит от силы воли <Ability:ClassName> и цели."
+; End translation (2)
 
 [Apotheosis X2AbilityTemplate]
 LocFriendlyName="Апофеоз"
+; LWOTC Translated (2)
 LocFlyoverText="Апофеоз!"
+; End translation (2)
+; LWOTC Translated (2)
 LocLongDescription="Приблизьтесь к уровню божества! Значительно увеливает уклонение, силу атаки перчатками и мобильность. Расходует всю концентрацию, требуется минимум 3 ед."
-LocHelpText="Приблизьтесь к уровню божества! Значительно увеливает уклонение, силу атаки перчатками и мобильность. Расходует всю концентрацию, требуется минимум 3 ед."																																																											   
-LocPromotionPopupText="<Bullet/> Свободное действие, делающее Храмовника значительно сильнее на два хода.<br/><Bullet/> Увеличивает силу атаки перчатками на <Ability:ApotheosisDamageMultiplier/>% за каждую единицу концентрации выше 2.<br/><Bullet/> Увеличивает уклонение на <Ability:ApotheosisDodgeBonus/> за каждую единицу концентрации выше 2.<br/><Bullet/> Увеличивает мобильность на <Ability:ApotheosisMobilityBonus/> за каждую концентрацию выше 2.<br/><Bullet/> Требует минимум 3 ед. концентрации.<br/><Bullet/> Расходует всю концентрацию.<br/><Bullet/> Храмовник не может получать концентрацию во время действия Апофеоза."
-; End Translated
-
+LocHelpText=""Приблизьтесь к уровню божества! Значительно увеливает уклонение, силу атаки перчатками и мобильность. Расходует всю концентрацию, требуется минимум 3 ед."																																																											   "
+; End translation (2)
+; LWOTC Translated (3)
+LocPromotionPopupText="<Bullet/> Бесплатное действие, значительно усиливающее <Ability:ClassName> на два хода.<br/><Bullet/> За каждую единицу концентрации сверх 2 увеличивает весь наносимый урон на <Ability:ApotheosisDamageMultiplier/>%.<br/><Bullet/> За каждую единицу концентрации сверх 2 увеличивает уклонение на <Ability:ApotheosisDodgeBonus/>.<br/><Bullet/> За каждую единицу концентрации сверх 2 увеличивает мобильность на <Ability:ApotheosisMobilityBonus/>.<br/><Bullet/> Требуется не менее 3 единиц концентрации.<br/><Bullet/> Расходует всю концентрацию.<br/><Bullet/> Под действием «Апофеоза» <Ability:ClassName> может накапливать концентрацию."
+; End translation (3)
+; End translation
 
 ; LWOTC Translated
 [ShadowGrenadier X2AbilityTemplate]
@@ -106,23 +116,24 @@ LocFriendlyName="Теневой заряд"
 LocFlyoverText="Тень: +1 ход"
 LocHelpText="Расходует заряд, чтобы увеличить время нахождения в Тени на 1 ход."
 LocLongDescription="Расходует заряд, чтобы увеличить время нахождения в Тени на 1 ход."
+; LWOTC Translated (2)
 LocPromotionPopupText="<Bullet/> Позволяет находится в Тени на 1 ход больше.<br/><Bullet/> Может быть использовано только из Тени.<br/><Bullet/> Свободное действие, ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> <Ability:CHARGE_BATTERY_CHARGES/> заряд(ов) на миссию.<br/>"
-; End Translated
-
+; End translation (2)
+; End translation
 
 ; LWOTC Translated
 [SilentKillerDurationExtension X2AbilityTemplate]
 LocFriendlyName="\"Бесшумный Убийца\" обновляет Тень при убийстве врага"
 LocFlyoverText="Тень: +1 ход"
-; End Translated
+; End translation
 
 ; LWOTC Translated
 [Parkour_LW X2AbilityTemplate]
 LocFriendlyName="Паркур"
-LocHelpText="Перезарядка Крюка Заступника уменьшена на 1 ход."
-LocLongDescription="Перезарядка Крюка Заступника уменьшена на 1 ход."
-LocPromotionPopupText="<Bullet/> Повышает тактическую маневренность Заступика.<br/>"
-; End Translated
+LocHelpText="Перезарядка крюка-кошки <Ability:ClassName> сокращается на один ход."
+LocLongDescription="Перезарядка крюка-кошки <Ability:ClassName> сокращается на один ход."
+LocPromotionPopupText="<Bullet/> Повышает мобильность <Ability:ClassName> на поле боя.<br/>"
+; End translation
 
 ; LWOTC Translated
 [Executioner X2AbilityTemplate]
@@ -131,61 +142,59 @@ LocLongDescription="Добавляет +<Ability:DEATH_DEALER_CRIT/> к шанс
 LocHelpText="Добавляет +<Ability:DEATH_DEALER_CRIT/> к шансу критического попадания. Критические попадания из Тени по обойденным с фланга врагам нанесут двойной критический урон."
 LocPromotionPopupText="<Bullet/> Используйте увеличенную мобильность в Тени и уменьшенный радиус обзора врагов, чтобы обойти их с фланга и нанести огромный урон.<br/>"
 
-; End Translation
-[CheapShot X2AbilityTemplate]
-LocFriendlyName="Нечестный удар"
-LocFlyOverText="Нечестный удар"
-LocLongDescription= "Один раз за ход получите передвижение после выстрела из основного оружия в противника, уже раненого на этом ходу. Не работает со способностью \"Поножовщина\"."
-LocHelpText="Один раз за ход получите передвижение после выстрела из основного оружия в противника, уже раненого на этом ходу. Не работает со способностью \"Поножовщина\"."
-LocPromotionPopupText="<Bullet/> Работает только на стандартные выстрелы."
-; End Translated											 
+; End translation
 
 ; LWOTC Translated
+; LWOTC Translated (2)
 [RendTheMarked X2AbilityTemplate]
 LocFriendlyName="Черная метка"
 LocHelpText="Атаки метательными ножами дают складывающиеся бонусы в +<Ability:REND_THE_MARKED_CRIT/> к шансу критического попадания по цели (из всех источников) на оставшуюся часть хода."
 LocLongDescription="Атаки метательными ножами дают складывающиеся бонусы в +<Ability:REND_THE_MARKED_CRIT/> к шансу критического попадания по цели (из всех источников) на оставшуюся часть хода."
-LocPromotionPopupText="Атаки метательными ножами дают складывающиеся бонусы в +<Ability:REND_THE_MARKED_CRIT/> к шансу критического попадания по цели (из всех источников) на оставшуюся часть хода."
+LocPromotionPopupText="<Bullet/> Метательные ножи дают накапливаемый бонус +<Ability:REND_THE_MARKED_CRIT/> к шансу критического попадания по цели от всех источников до конца хода."
+; End translation (2)
+
 
 [KnifeEncounters X2AbilityTemplate]
 LocFriendlyName="Поножовщина"
 LocFlyOverText="Поножовщина"
-LocLongDescription="Один раз за ход дает бонусное действие после метания ножа по цели в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток."
-LocHelpText="Один раз за ход дает бонусное действие после метания ножа по цели в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток."
-LocPromotionPopupText="<Bullet/> Один раз за ход дает бонусное действие после метания ножа по цели в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток.<br/><Bullet/> Красный круг покажет дальность действия способности.<br/><Bullet/> Не может быть использовано в один ход со Стрельбой на бегу.<br/>"
+;LWOTC needs Translation(2)
+LocLongDescription="Раз в ход получает дополнительное действие после броска ножа во врага в пределах <Ability:KNIFE_ENCOUNTERS_MAX_TILES/> клеток. Не срабатывает в тот же ход, что и «Подлый удар»."
+LocHelpText="Раз в ход получает дополнительное действие после броска ножа во врага в пределах <Ability:KNIFE_ENCOUNTERS_MAX_TILES/> клеток. Не срабатывает в тот же ход, что и «Подлый удар»."
+LocPromotionPopupText="<Bullet/> Раз в ход даёт дополнительное действие после броска ножа во врага в пределах <Ability:KNIFE_ENCOUNTERS_MAX_TILES/> клеток.<br/><Bullet/> Радиус действия способности обозначается красным кольцом.<br/><Bullet/> Нельзя использовать в тот же ход, что и «Беги и стреляй» или «Подлый удар».<br/>"
+;LWOTC End Translation(2)
 
 [KnifeEncountersExtendedRange X2AbilityTemplate]
 LocFriendlyName="Поножовщина"
 LocFlyOverText="Поножовщина"
-LocLongDescription="Один раз за ход дает бонусное действие после метания ножа по цели в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток."
-LocHelpText="Один раз за ход дает бонусное действие после метания ножа по цели в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток."
-LocPromotionPopupText="<Bullet/> Один раз за ход дает бонусное действие после метания ножа по цели в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток.<br/><Bullet/> Красный круг покажет дальность действия способности.<br/><Bullet/> Не может быть использовано в один ход со Стрельбой на бегу.<br/>"
+;LWOTC needs Translation(2)
+LocLongDescription="Раз в ход получает дополнительное действие после броска ножа во врага в пределах <Ability:KNIFE_ENCOUNTERS_BANISHER_MAX_TILES/> клеток. Не срабатывает в тот же ход, что и «Подлый удар»."
+LocHelpText="Раз в ход получает дополнительное действие после броска ножа во врага в пределах <Ability:KNIFE_ENCOUNTERS_BANISHER_MAX_TILES/> клеток. Не срабатывает в тот же ход, что и «Подлый удар»."
+LocPromotionPopupText="<Bullet/> Раз в ход даёт дополнительное действие после броска ножа во врага в пределах <Ability:KNIFE_ENCOUNTERS_BANISHER_MAX_TILES/> клеток.<br/><Bullet/> Радиус действия способности обозначается красным кольцом.<br/><Bullet/> Нельзя использовать в тот же ход, что и «Беги и стреляй» или «Подлый удар».<br/>"
+;LWOTC End Translation(2)
 
-
+; LWOTC Translated (2)
 [ImpersonalEdge X2AbilityTemplate]
 LocFriendlyName="Смертельное лезвие"
 LocFlyOverText="Смертельное лезвие"
 LocLongDescription="Уменьшает перезарядку Тени на 1 и дает складывающийся бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости на 3 хода после убийства с помощью метательного ножа."
 LocHelpText="Уменьшает перезарядку Тени на 1 и дает складывающийся бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости на 3 хода после убийства с помощью метательного ножа."
-LocPromotionPopupText="<Bullet/> Уменьшает перезарядку Тени на 1 и дает складывающийся бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости на 3 хода после убийства с помощью метательного ножа.<br/>"
+LocPromotionPopupText="Убийство метательным ножом сокращает перезарядку Тени на 1 ход и даёт на 3 хода накапливаемый бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости.<br/>"
 
 [ImpersonalEdgePassive X2AbilityTemplate]
 LocFriendlyName="Смертельное лезвие"
 LocFlyOverText="Смертельное лезвие"
 LocLongDescription="Уменьшает перезарядку Тени на 1 и дает складывающийся бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости на 3 хода после убийства с помощью метательного ножа."
 LocHelpText="Уменьшает перезарядку Тени на 1 и дает складывающийся бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости на 3 хода после убийства с помощью метательного ножа."
-LocPromotionPopupText="<Bullet/> Уменьшает перезарядку Тени на 1 и дает складывающийся бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости на 3 хода после убийства с помощью метательного ножа.<br/>"
+LocPromotionPopupText="Убийство метательным ножом сокращает перезарядку Тени на 1 ход и даёт на 3 хода накапливаемый бонус +<Ability:IMPERSONAL_EDGE_AIM/> к меткости.<br/>"
+; End translation (2)
 
 [BlueScreenKnives X2AbilityTemplate]
 LocFriendlyName="Ножи \"Синий экран\""
 LocHelpText="Метательные ножи дают +<Ability:BLUESCREEN_KNIVES_PIERCE/> к пробитию брони и дезориентируют вражеских роботов."
 LocLongDescription="Метательные ножи дают +<Ability:BLUESCREEN_KNIVES_PIERCE/> к пробитию брони и дезориентируют вражеских роботов."
-LocPromotionPopupText="Метательные ножи дают +<Ability:BLUESCREEN_KNIVES_PIERCE/> к пробитию брони и дезориентируют вражеских роботов."
-
-[LW_FactionBalance.X2Ability_ThrowingKnifeAbilitySet]
-RendTheMarkedEffectName="Черная метка"
-RendTheMarkedEffectDesc="Атаки метательными ножами дают складывающиеся бонусы в +<Ability:REND_THE_MARKED_CRIT/> к шансу критического попадания по цели (из всех источников) на оставшуюся часть хода."
-; End Translation
+; LWOTC Translated (2)
+LocPromotionPopupText="<Bullet/> Метательные ножи получают пробивание брони +<Ability:BLUESCREEN_KNIVES_PIERCE/> и дезориентируют роботизированных противников."
+; End translation (2)
 
 ; LWOTC Translated
 [BattlefieldAwareness X2AbilityTemplate]
@@ -207,14 +216,34 @@ LocFriendlyName="Знаю, куда ударишь: перезарядка"
 LocLongDescription="Способность нельзя активировать, пока не кончится этот эффект."
 LocHelpText="Способность нельзя активировать, пока не кончится этот эффект."
 
-; End Translation
 
 [CombatPresence X2AbilityTemplate]
 LocPromotionPopupText="<Bullet/> Эффект Присутствия можно использовать, чтобы помочь товарищам в трудной ситуации, когда им нужно дополнительное движение или атака.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/>"
 
-; lwotc translated
+
+; LWOTC Translated
+
+[CheapShot X2AbilityTemplate]
+LocFriendlyName="Нечестный удар"
+LocFlyOverText="Нечестный удар"
+LocLongDescription= "Один раз за ход получите передвижение после выстрела из основного оружия в противника, уже раненого на этом ходу. Не работает со способностью \"Поножовщина\"."
+LocHelpText="Один раз за ход получите передвижение после выстрела из основного оружия в противника, уже раненого на этом ходу. Не работает со способностью \"Поножовщина\"."
+LocPromotionPopupText="<Bullet/> «Подлый удар» срабатывает, если с прошлого хода игрока цель получила любой урон; учитываются, например, ответный огонь и периодический урон в ход противника.<br/><Bullet/> Работает с умениями «Огонь на подавление», «Очередь» и «Изгнание», а также с обычным выстрелом.<br/><Bullet/> Действие перемещения можно использовать для входа в Тень, если её перезарядка завершилась.<br/>"
+; End translation
+
 [TheBanisher_LW X2AbilityTemplate]
 LocFriendlyName="Настоящий охотник"
-LocLongDescription="Уменьшает штраф каждого выстрела способности Разгром на 5 и уменьшает перезарядку этой способности на 1. Увеличен радиус способности Поножовщина на 1. Торговец смертью теперь работает и на противников, не умеющих использовать укрытия."
-LocHelpText="Уменьшает штраф каждого выстрела способности Разгром на 5 и уменьшает перезарядку этой способности на 1. Увеличен радиус способности Поножовщина на 1. Торговец смертью теперь работает и на противников, не использующих укрытия. Примечание: отображение круга дальности действия способности Поножовщина отображается без обновленного увеличения радиуса."
-; end translated
+LocLongDescription="Уменьшает штраф к меткости за каждый выстрел «Изгнания» на <Ability:THEBANISHER_HIT_BUFF> и сокращает его перезарядку на 1 ход. Увеличивает дальность «Ножевой встречи» до <Ability:KNIFE_ENCOUNTERS_BANISHER_MAX_TILES/> клеток. «Истинный хищник» теперь удваивает бонус критического урона оружия против целей, которые нельзя обойти с фланга."
+LocHelpText="Уменьшает штраф к меткости за каждый выстрел «Изгнания» на <Ability:THEBANISHER_HIT_BUFF> и сокращает его перезарядку на 1 ход. Увеличивает дальность «Ножевой встречи» до <Ability:KNIFE_ENCOUNTERS_BANISHER_MAX_TILES/> клеток. «Истинный хищник» теперь удваивает бонус критического урона оружия против целей, которые нельзя обойти с фланга."
+
+[SwiftThrow_LW X2AbilityTemplate]
+LocFriendlyName="Быстрый бросок"
+LocHelpText="Бросьте нож бесплатным действием. Перезарядка: 4 хода."
+LocLongDescription="Бросьте нож бесплатным действием. Перезарядка: 4 хода."
+LocPromotionPopupText="<Bullet/> Бросьте нож бесплатным действием. Перезарядка: 4 хода."
+
+[TacticalRetreat_LW X2AbilityTemplate]
+LocFriendlyName="Тактическое отступление"
+LocHelpText="Тактическое отступление"
+LocLongDescription="После броска ножа дает действие только на перемещение. Может сработать один раз за ход."
+LocPromotionPopupText="<Bullet/> После броска ножа дает действие только на перемещение. Может сработать один раз за ход."
