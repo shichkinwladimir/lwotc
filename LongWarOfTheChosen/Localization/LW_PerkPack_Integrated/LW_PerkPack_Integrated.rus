@@ -34,15 +34,39 @@ m_strNoWeaponUpgradesTooltip="УЛУЧШЕНИЕ ОРУЖИЯ НЕДОСТУПН
 TrojanVirus="Троян"
 TrojanVirusTriggered="<XGParam:StrValue0/!UnitName/> активирует троян."
 
+ShellshockEffectDesc="У этого бойца снижены меткость и шанс критического попадания."
+ShellshockEffectName="Контужен"
+
+ShockwaveEffectName="Ошеломлён"
+ShockwaveEffectDesc="У этого бойца снижены защита и уклонение."
+
+; LWOTC Translated
+[X2Effect_LWCombatStims]
+strEffectBonusName = "Боевые стимуляторы"
+strEffectBonusDesc = "На бойца действуют боевые стимуляторы. Его меткость и шанс критического попадания повышены."
+
 [X2Effect_LWDenseSmoke]
 strEffectBonusName = "Густой дым"
 strEffectBonusDesc = "Густой дым дополнительно увеличивает защиту этого солдата."
+
+[X2Effect_LWRegenSmoke]
+strEffectBonusName = "Регенерирующий туман"
+strEffectBonusDesc = "На бойца действует регенерирующий туман. В начале каждого хода он восстанавливает ОЗ."
+; End Translation
 
 [X2Effect_Savior]
 strSavior_WorldMessage="Спаситель: восстанавливается дополнительно <XGParam:IntValue0/> здоровья."
 
 [X2Effect_LWHolotarget]
 HoloTargetEffectName="Голографическая метка"
+
+[X2Effect_ApplyRepairHeal_LW]
+HealedMessage="+<Heal/> ОЗ восстановлено"
+
+[X2Effect_RepairArmor_LW]
+ArmorRepairedMessage="Повреждённая броня восстановлена"
+
+;POTENTIALLY DEPRECATED AS WELL AS ALL TRANSLATIONS!
 
 [X2Item_DenseSmokeGrenade]
 DenseSmokeGrenadeEffectDisplayName="Густой дым"
@@ -55,6 +79,9 @@ LocCoveringFireMalus="По этому юниту был произведен в�
 ; LWOTC Translated
 LocSoulStealBuff="Кража души: щит"
 LocSoulStealBuffHelpText="Кража души дает дополнительные единицы щита, если украдено болше ОЗ, чем надо для лечения"
+
+LocVampirismBuff="Вампиризм"
+LocVampirismBuffHelpText="При чрезмерном лечении вампиризм даёт дополнительные очки временной брони."
 ; End Translation
 
 ; LWOTC Translated
