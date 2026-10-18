@@ -2,54 +2,54 @@
 [MusashiThrowKnifeSecondary_LW X2AbilityTemplate]
 LocFriendlyName="Бросить нож"
 LocFlyOverText="Бросить нож"
-LocLongDescription="Бросить нож в цель. Остается в Тени."
-LocHelpText="Бросить нож в цель. Остается в Тени."
-LocPromotionPopupText="<Bullet/> Бросок ножа не снимает Тень и не привлекает Странников.<br/><Bullet/> Обычная маскировка теряется."
+LocLongDescription="Бросает метательный нож в цель. Снимает обычную маскировку, но не Тень."
+LocHelpText="Бросает метательный нож в цель. Снимает обычную маскировку, но не Тень."
+LocPromotionPopupText="<Bullet/> Бросок ножа не снимает Тень и не привлекает Странников.<br/><Bullet/> Эта способность снимает обычную маскировку."
 
 [KnifeJuggler_LW X2AbilityTemplate]
-LocFriendlyName="Мастер ножей"
-LocFlyOverText="Мастер ножей"
-LocLongDescription="Добавляет +<Ability:KnifeJugglerBonusDamage/> урона к броскам ножей и добавляет <Ability:KnifeJugglerExtraAmmo/> дополнительно к запасу ножей и ещё 1 за каждое убийство из основного оружия."
-LocHelpText="Добавляет +<Ability:KnifeJugglerBonusDamage/> урона к броскам ножей и добавляет <Ability:KnifeJugglerExtraAmmo/> дополнительно к запасу ножей и ещё 1 за каждое убийство из основного оружия."
-LocPromotionPopupText="<Bullet/> Добавляет +<Ability:KnifeJugglerBonusDamage/> урона к броскам ножей.<br/><Bullet/> И добавляет <Ability:KnifeJugglerExtraAmmo/> дополнительно к запасу ножей и ещё 1 за каждое убийство из основного оружия."
+LocFriendlyName="Метатель ножей"
+LocFlyOverText="Метатель ножей"
+LocLongDescription="Добавляет +<Ability:KnifeJugglerBonusDamage/> урона метательным ножам и даёт <Ability:KnifeJugglerExtraAmmo/> дополнительных ножей. Каждое убийство из основного оружия даёт один дополнительный заряд ножа."
+LocHelpText="Добавляет +<Ability:KnifeJugglerBonusDamage/> урона метательным ножам и даёт <Ability:KnifeJugglerExtraAmmo/> дополнительных ножей. Каждое убийство из основного оружия даёт один дополнительный заряд ножа."
+LocPromotionPopupText="<Bullet/> Добавляет +<Ability:KnifeJugglerBonusDamage/> урона метательным ножам.<br/><Bullet/> Даёт <Ability:KnifeJugglerExtraAmmo/> дополнительных зарядов метательных ножей.<br/><Bullet/> Каждое убийство из основного оружия даёт один дополнительный заряд ножа.<br/>"
 
 [Hailstorm_LW X2AbilityTemplate]
 LocFriendlyName="Железный ливень"
 LocFlyOverText="Железный ливень"
-LocLongDescription="Три быстрых броска в цель. Остается в Тени."
-LocHelpText="Три быстрых броска в цель. Остается в Тени."
-LocPromotionPopupText="<Bullet/> На каждый нож идёт отдельный бонус, к примеру от урона.<br/><Bullet/> Ножи не получают преимущества от изменяемого здоровья цели после 1ого или 2ого броска."
+LocLongDescription="Быстро бросает в цель три ножа подряд. Гарантированно сохраняет Тень."
+LocHelpText="Быстро бросает в цель три ножа подряд. Гарантированно сохраняет Тень."
+LocPromotionPopupText="<Bullet/> Каждый нож сохраняет все бонусы, доступные при одиночном броске, например дополнительный урон и эффекты состояния.<br/><Bullet/> Ножи не получают преимуществ от эффектов, зависящих от здоровья цели, если необходимые условия не выполнены до первого броска."
 
 [ThrowingKnifeFaceoff_LW X2AbilityTemplate]
 LocFriendlyName="Поножовщина"
 LocFlyOverText="Поножовщина"
-LocLongDescription="Кидает нож в каждую цель в радиусе. Остается в тени"
-LocHelpText="Кидает нож в каждую цель в радиусе. Остается в тени"
+LocLongDescription="Бросает нож в каждую цель в радиусе действия. Гарантированно сохраняет Тень."
+LocHelpText="Бросает нож в каждую цель в радиусе действия. Гарантированно сохраняет Тень."
+; LWOTC Translated (2)
+LocPromotionPopupText="<Bullet/> Имеет только один заряд и не расходует заряды обычных метательных ножей.<br/><Bullet/> Идеально подходит для атаки с фланга сразу нескольких врагов.<br/>"
+; End Translation (2)
 
 ; LWOTC Translated (2)
-LocPromotionPopupText="<Bullet/> Уникальный заряд. Не расходует обычные ножи.<br/><Bullet/> Рекомендуется использовать против множества врагов без укрытия.<br/>"
-; End Translated (2)
-
-;LWOTC Translated
 [ThrowingKnife_CV_Secondary X2WeaponTemplate]
-FriendlyName="Нож"
-FriendlyNamePlural="Нож"
-BriefSummary="Метательные ножи сделаны из отличных сплавов."
-TacticalText="<Bullet/> Бросок ножа не снимает Тень, но снимает обычную маскировку.<br/><Bullet/> Шанс <Ability:THROWING_KNIFE_CV_BLEED_CHANCE/>% наложить кровотечение, которое наносит <Ability:THROWING_KNIFE_CV_BLEED_DAMAGE/> урона каждый ход в течение <Ability:THROWING_KNIFE_CV_BLEED_DURATION/> ходов."
+FriendlyName="Метательный нож"
+FriendlyNamePlural="Метательные ножи"
+BriefSummary="Метательный нож, изготовленный из самых совершенных обычных стальных сплавов."
+TacticalText="<Bullet/> Бросок ножа снимает обычную маскировку, но не Тень.<br/><Bullet/> Шанс <Ability:THROWING_KNIFE_CV_BLEED_CHANCE/>% вызвать кровотечение, наносящее <Ability:THROWING_KNIFE_CV_BLEED_DAMAGE/> урона каждый ход в течение <Ability:THROWING_KNIFE_CV_BLEED_DURATION/> ход(ов)."
 AbilityDescName="метательный нож"
 
 [ThrowingKnife_MG_Secondary X2WeaponTemplate]
-FriendlyName="Нож из сплавов"
-FriendlyNamePlural="Ножи из сплавов"
-BriefSummary="Метательные ножи, сделанные из инопланетных сплавов."
-TacticalText="<Bullet/> Бросок ножа не снимает Тень, но снимает обычную маскировку.<br/><Bullet/> Шанс <Ability:THROWING_KNIFE_MG_BLEED_CHANCE/>% наложить кровотечение, которое наносит <Ability:THROWING_KNIFE_MG_BLEED_DAMAGE/> урона каждый ход в течение <Ability:THROWING_KNIFE_MG_BLEED_DURATION/> ходов."
+FriendlyName="Метательный нож из сплавов"
+FriendlyNamePlural="Метательные ножи из сплавов"
+BriefSummary="Метательный нож, изготовленный из инопланетных сплавов."
+TacticalText="<Bullet/> Бросок ножа снимает обычную маскировку, но не Тень.<br/><Bullet/> Шанс <Ability:THROWING_KNIFE_MG_BLEED_CHANCE/>% вызвать кровотечение, наносящее <Ability:THROWING_KNIFE_MG_BLEED_DAMAGE/> урона каждый ход в течение <Ability:THROWING_KNIFE_MG_BLEED_DURATION/> ход(ов)."
 AbilityDescName="метательный нож"
 
 [ThrowingKnife_BM_Secondary X2WeaponTemplate]
-FriendlyName="Теневой нож"
-FriendlyNamePlural="Теневые ножи"
-BriefSummary="Ножи с плазменным лезвием рассекают броню словно масло."
-TacticalText="<Bullet/> Бросок ножа не снимает Тень, но снимает обычную маскировку.<br/><Bullet/> Шанс <Ability:THROWING_KNIFE_BM_BLEED_CHANCE/>% наложить кровотечение, которое наносит <Ability:THROWING_KNIFE_BM_BLEED_DAMAGE/> урона каждый ход в течение <Ability:THROWING_KNIFE_BM_BLEED_DURATION/> ходов."
+FriendlyName="Плазменный метательный нож"
+FriendlyNamePlural="Плазменные метательные ножи"
+BriefSummary="Метательный нож с плазменной кромкой, которая прорезает броню словно масло."
+TacticalText="<Bullet/> Бросок ножа снимает обычную маскировку, но не Тень.<br/><Bullet/> Шанс <Ability:THROWING_KNIFE_BM_BLEED_CHANCE/>% вызвать кровотечение, наносящее <Ability:THROWING_KNIFE_BM_BLEED_DAMAGE/> урона каждый ход в течение <Ability:THROWING_KNIFE_BM_BLEED_DURATION/> ход(ов)."
 AbilityDescName="метательный нож"
+; End Translation (2)
 
-; End Translated
+; End Translation
