@@ -1,23 +1,75 @@
+[PI_MCMListener]
+MOD_NAME="Полная информация"
+OPTIONS_HEADER="Настройки"
+
+DURATION_TITLE_DAMAGE="Длительность отображения урона"
+DURATION_DESCRIPTION_DAMAGE="Длительность отображения гарантированного урона"
+
+FLYOVER_TITLE_XCOM="Показывать всплывающие значения для бойцов XCOM"
+FLYOVER_TITLE_ENEMY="Показывать всплывающие значения для врагов"
+
+REACTION_FLYOVERS_TITLE="Показывать всплывающие значения только для ответных выстрелов"
+AIM_ASSIST_FLYOVER_TITLE="Показывать всплывающие значения помощи при прицеливании"
+
+HIT_CHANCE_TITLE="Показывать шанс попадания"
+CRIT_CHANCE_TITLE="Показывать шанс критического попадания"
+DODGE_CHANCE_TITLE="Показывать шанс уклонения"
+MISS_CHANCE_TITLE="Показывать шанс промаха"
+
+SHORT_STRING_TITLE="Использовать короткие строки"
+
+SHOW_GUARANTEED_HITS_TITLE="Показывать гарантированные попадания"
+SHOW_GUARANTEED_MISS_TITLE="Показывать гарантированные промахи"
+
+REPEATER_TITLE="Показывать срабатывания повторителя"
+
+SHOW_ENEMY_STATS_TITLE="Показывать характеристики врага во всплывающей подсказке"
+
+SHOW_EXTRA_WEAPONSTATS_TITLE="Показывать дополнительные характеристики оружия"
+
+SHOW_AIM_ASSIST_MAIN_HUD_TITLE="Показывать помощь при прицеливании на панели выстрела"
+SHOW_MISS_CHANCE_MAIN_HUD_TITLE="Показывать шанс промаха на панели выстрела"
+
+AIM_LEFT_OF_CRIT_TITLE="Показывать прицеливание слева от критического шанса на шкале выстрела"
+PREVIEW_MINIMUM_TITLE="В предпросмотре урона показывать минимум"
+SHOW_DODGE_TITLE="Показывать уклонение на панели выстрела"
+SHOW_CRIT_DMG_TITLE="Показывать критический урон на панели выстрела"
+PREVIEW_HACKING_TITLE="Показывать предварительный результат взлома"
+
+SHOW_AIM_ASSIST_OVER_ENEMY_ICON_TITLE="Показывать помощь при прицеливании над значком врага"
+SHOW_MISS_CHANCE_OVER_ENEMY_ICON_TITLE="Показывать шанс промаха над значком врага"
+
+SHOW_ALWAYS_SHOT_BREAKDOWN_HUD_TITLE="Всегда показывать подробности выстрела на панели"
+SHOW_MISS_CHANCE_BREAKDOWN_HUD_TITLE="Показывать шанс промаха в подробностях выстрела"
+SHOW_AIM_ASSIST_BREAKDOWN_HUD_TITLE="Показывать помощь при прицеливании в подробностях выстрела"
+
 [XCom_Perfect_Information_X2Action_ApplyWeaponDamageToUnit]
+//HIT_CHANCE_MSG ="HIT:";
 HIT_CHANCE_MSG ="ПОПАДАНИЕ:";
 CRIT_CHANCE_MSG ="КРИТ:";
+//DODGE_CHANCE_MSG ="DODGE:";
 DODGE_CHANCE_MSG ="УКЛОНЕНИЕ:";
 MISS_CHANCE_MSG ="ПРОМАХ:";
- 
+
 GUARANTEED_HIT_MSG ="- ГАРАНТИРОВАННОЕ ПОПАДАНИЕ";
 GUARANTEED_MISS_MSG ="- ГАРАНТИРОВАННЫЙ ПРОМАХ";
- 
+
 REPEATER_KILL_MSG ="- Повторитель:";
- 
+
 [XCom_Perfect_Information_UITacticalHUD_ShotWings]
 LOWER_DIFFICULTY_MSG = "НИЗКАЯ СЛОЖНОСТЬ";
 MISS_STREAK_MSG = "СЕРИЯ ПРОМАХОВ";
 SOLDIER_LOST_BONUS = "БОНУС ЗА ПОТЕРЮ СОЛДАТА";
- 
+
 [XCom_Perfect_Information_UITacticalHUD_SoldierInfoTooltip]
 KILLS_LABEL = "Убийства";
 ASSIST_LABEL = "Содействия";
 FLANKING_CRIT_LABEL = "Крит с фланга";
+
+[XCom_Perfect_Information_UITacticalHUD_EnemyTooltip]
+PrimaryBase = "Основной урон"
+PrimarySpread = "Разброс основного урона"
+PrimaryPlusOne = "Основной урон +1"
 
 [XCom_Perfect_Information_UIEffectListItem]
 TURNS_REMAINING = "ХОДА (-ОВ) ОСТАЛОСЬ"
