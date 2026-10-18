@@ -10,47 +10,51 @@ m_strUnavailableToClass="НЕДОСТУПНО"
 [DepthPerceptionPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Резкость зрения"
 FriendlyNamePlural="ПБМ: Резкость зрения"
-BriefSummary="Кибернетический имплантат дает +5 к меткости и снижает уклонение врагов на 25 при стрельбе с более высокой позиции, чем та, где находится цель."
+BriefSummary="Кибернетический имплантат дает <Ability:DP_AIM_BONUS> к меткости и снижает уклонение врагов на <Ability:DP_ANTIDODGE_BONUS> при стрельбе с более высокой позиции, чем та, где находится цель."
 
 [HyperReactivePupilsPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Гиперчувствительные зрачки"
 FriendlyNamePlural="ПБМ: Гиперчувствительные зрачки"
-BriefSummary="Модуль дает +10 к меткости при следующем выстреле из основного оружия после промаха."
+BriefSummary="Модуль дает <Ability:HYPERREACTIVE_PUPILS_AIM_BONUS> к меткости при следующем выстреле из основного оружия после промаха."
 
+; LWOTC Needs Translation
 [CombatAwarenessPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Внимательность"
 FriendlyNamePlural="ПБМ: Внимательность"
-BriefSummary="Добавляет 15 к Защите и 1 ед. брони в режиме \"наблюдения\"."
+BriefSummary="Добавляет <Ability:COMBAT_AWARENESS_BONUS_DEFENSE> к Защите и <Ability:COMBAT_AWARENESS_BONUS_ARMOR> ед. брони в режиме \"наблюдения\"."
+; End Translation
 
 [CombatRushPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Боевой азарт"
 FriendlyNamePlural="ПБМ: Боевой азарт"
-BriefSummary="Когда вы убиваете противника, союзники в пределах 7 клеток временно получают бонус к меткости, шансу критического урона и мобильности. 5 ходов на перезарядку."
+BriefSummary="Убив врага, вы даёте союзникам в радиусе <Ability:COMBAT_RUSH_RADIUS> клеток +<Ability:COMBAT_RUSH_AIM_BONUS> к меткости, +<Ability:COMBAT_RUSH_CRIT_BONUS> к шансу критического попадания и +<Ability:COMBAT_RUSH_MOBILITY_BONUS> к мобильности на <Ability:COMBAT_RUSH_DURATION> ходов. Перезарядка: <Ability:COMBAT_RUSH_COOLDOWN> ходов."
 
 [DamageControlPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Борьба за выживание"
 FriendlyNamePlural="ПБМ: Борьба за выживание"
-BriefSummary="Модуль усиливает броню при атаках противника, а также добавлет 2 единицы брони на 1 ход после получения урона."
+BriefSummary="Модуль усиливает броню при атаках противника, а также добавлет <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони на <Ability:DAMAGE_CONTROL_DURATION> ход после получения урона."
 
 [AbsorptionFieldsPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Поглощающие поля"
 FriendlyNamePlural="ПБМ: Поглощающие поля"
-BriefSummary="Имплантированный проектор силового поля, могущего поглотить 33% урона в течение двух ходов."
+BriefSummary="Этот имплант-проектор щита можно активировать действием, чтобы уменьшить получаемый урон на 33% на <Ability:ABSORPTION_FIELDS_DURATION> ходов. Перезарядка: <Ability:ABSORPTION_FIELDS_COOLDOWN> ходов."
 
 [BodyShieldPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Направленный щит"
 FriendlyNamePlural="ПБМ: Направленный щит"
-BriefSummary="Выбранный противник получает -20 к меткости и -50% к шансу критического урона против вас."
+BriefSummary="Выберите врага свободным действием: его меткость против вас уменьшится на <Ability:BODY_SHIELD_DEF_BONUS>, а шанс критического попадания — на <Ability:BODY_SHIELD_ENEMY_CRIT_MALUS> на <Ability:BODY_SHIELD_DURATION> ходов. Перезарядка: <Ability:BODY_SHIELD_COOLDOWN> ходов."
 
+; LWOTC Needs Translation
 [EmergencyLifeSupportPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Экстренная стабилизация"
 FriendlyNamePlural="ПБМ: Экстренная стабилизация"
-BriefSummary="Модуль гарантирует, что первый летальный урон на задании не приведет к мгновенной смерти, а также увеличивает время, в течение которого солдат истекает кровью, на два хода."
+BriefSummary="Один раз за задание, когда здоровье бойца падает до 0, он гарантированно переходит в состояние кровотечения (если только эффект не препятствует этому). Время до смерти увеличивается на <Ability:EMERGENCY_LIFE_SUPPORT_BONUS_BLEEDINGOUT_TURNS> ходов."
+; End Translation
 
 [IronSkinPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Железная кожа"
 FriendlyNamePlural="ПБМ: Железная кожа"
-BriefSummary="Снижает на 3 ед. урон, получаемый в рукопашной схватке."
+BriefSummary="Снижает на <Ability:IRON_SKIN_MELEE_DAMAGE_REDUCTION> ед. урон, получаемый в рукопашной схватке."
 
 [SmartMacrophagesPCS X2EquipmentTemplate]
 FriendlyName="ПБМ: Умные макрофаги"
@@ -58,6 +62,8 @@ FriendlyNamePlural="ПБМ: Умные макрофаги"
 BriefSummary="Снижает время восстановления от ранений и дает иммунитет к ядам и кислоте."
 
 [CenterMass X2AbilityTemplate]
+; A special 'е' character is used for the second 'e' to prevent the
+; perk name appearing centered. Thanks to bountygiver for the suggestion.
 LocFriendlyName="Точно в цель"
 LocFlyOverText="Точно в цель"
 LocLongDescription="Базовый урон стрелкового оружия увеличивается на единицу."
@@ -67,9 +73,11 @@ LocPromotionPopupText="<Bullet/> Базовый урон основного ор
 [Lethal X2AbilityTemplate]
 LocFriendlyName="Смертоносность"
 LocFlyOverText="Смертоносность"
+; LWOTC Needs Translation
 LocLongDescription="Добавляет <Ability:LETHAL_DAMAGE_LW/> к базовому урону и <Ability:LETHAL_CRIT_DAMAGE_LW/> к критическому урону основного оружия солдата."
 LocHelpText="Добавляет <Ability:LETHAL_DAMAGE_LW/> к базовому урону и <Ability:LETHAL_CRIT_DAMAGE_LW/> к критическому урону основного оружия солдата."
 LocPromotionPopupText="<Bullet/> Добавляет <Ability:LETHAL_DAMAGE_LW/> к базовому урону и <Ability:LETHAL_CRIT_DAMAGE_LW/> к критическому урону основного оружия солдата."
+; End Translation
 
 [HitandSlither X2AbilityTemplate]
 LocFriendlyName="Ударь и ускользни"
@@ -81,44 +89,52 @@ LocPromotionPopupText="<Bullet/> Один раз за ход дает допол
 [HitandRun X2AbilityTemplate]
 LocFriendlyName="Бей и беги"
 LocFlyOverText="Бей и беги"
+; LWOTC Needs Translation
 LocLongDescription="Один раз за ход дает дополнительное действие  после стандартного выстрела из основного оружия по врагу, обойденному с фланга или стоящему без укрытия. Не может сработать одновременно с \"Близкими контактами\""
+; End Translation
 LocHelpText="Один раз за ход дает дополнительное действие  после стандартного выстрела из основного оружия по врагу, обойденному с фланга или стоящему без укрытия."
 LocPromotionPopupText="<Bullet/> Не может быть использовано вместе со способностью \"Стрельба на бегу\".<br/><Bullet/> Бонусные действия от \"Смерти с небес\" и \"Серии\" будут предоставлены в первую очередь."
 
 [CloseCombatSpecialist X2AbilityTemplate]
 LocFriendlyName="Мастер ближнего боя"
 LocFlyOverText="Мастер ближнего боя"
-LocLongDescription="Автоматический ответный выстрел из основного оружия по любому видимому врагу, если тот движется или ведет огонь в пределах 4 клеток."
-LocHelpText="Автоматический ответный выстрел из основного оружия по любому видимому врагу, если тот движется или ведет огонь в пределах 4 клеток."
-LocPromotionPopupText="<Bullet/> Не действует, если солдат замаскирован.<br/><Bullet/> Способность позволяет сделать только один выстрел в каждого врага в течение хода.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/>"
+; LWOTC Needs Translation (3)
+LocLongDescription="Сделайте бесплатный ответный выстрел из оружия <Ability:BOUND_WEAPON_NAME/> по любому видимому врагу в пределах <Ability:CCS_RANGE> клеток, который перемещается или атакует."
+LocHelpText="Автоматический ответный выстрел из основного оружия по любому видимому врагу, если тот движется или ведет огонь в пределах <Ability:CCS_RANGE> клеток."
+; End Translation (3)
+LocPromotionPopupText="<Bullet/> Не действует, если солдат замаскирован.<br/><Bullet/> Способность позволяет сделать только один выстрел в каждого врага в течение хода.<br/><Bullet/> Использует <Ability:CCS_AMMO_PER_SHOT> ед. боекомплекта.<br/>"
 
 [CloseCombatSpecialistAttack X2AbilityTemplate]
 LocFriendlyName="Мастер ближнего боя"
 LocFlyOverText="Мастер ближнего боя"
-LocLongDescription="Позволяет во время хода противника выстрелить из основного оружия по любому видимому врагу, если тот движется или ведет огонь в пределах 4 клеток."
-LocHelpText="Позволяет во время хода противника выстрелить по любому видимому врагу, если тот движется или ведет огонь в пределах 4 клеток."
-LocPromotionPopupText="<Bullet/> Не действует, если солдат замаскирован.<br/><Bullet/> Способность позволяет сделать только один выстрел в каждого врага в течение хода.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/>"
+; LWOTC Needs Translation (2)
+LocLongDescription="Сделайте бесплатный ответный выстрел из оружия <Ability:BOUND_WEAPON_NAME/> по любому видимому врагу в пределах <Ability:CCS_RANGE> клеток, который перемещается или атакует."
+; End Translation (2)
+LocHelpText="Позволяет во время хода противника выстрелить по любому видимому врагу, если тот движется или ведет огонь в пределах <Ability:CCS_RANGE> клеток."
+LocPromotionPopupText="<Bullet/> Не действует, если солдат замаскирован.<br/><Bullet/> Способность позволяет сделать только один выстрел в каждого врага в течение хода.<br/><Bullet/> Использует <Ability:CCS_AMMO_PER_SHOT> ед. боекомплекта.<br/>"
 
 [CloseandPersonal X2AbilityTemplate]
 LocFriendlyName="Лицом к лицу"
 LocFlyOverText="Лицом к лицу"
 LocLongDescription="Добавляет +30% к шансу критического попадания по ближайшим целям. Чем дальше цель, тем меньше бонус."
 LocHelpText="Добавляет +30% к шансу критического попадания по ближайшим целям. Чем дальше цель, тем меньше бонус."
-LocPromotionPopupText="<Bullet/> Добавляет +30% к шансу критического попадания по ближайшим целям.<br/><Bullet/> Бонус снижается на 5% за каждую клетку до цели; на дистанции в 7 и более клеток - до 0%.<br/>"
+LocPromotionPopupText="<Bullet/> Добавляет +30% к шансу критического попадания по ближайшим целям.<br/> Бонус снижается на 5% за каждую клетку до цели; на дистанции в 7 и более клеток - до 0%."
 
 [DamnGoodGround X2AbilityTemplate]
 LocFriendlyName="Господствующая высота"
 LocFlyOverText="Господствующая высота"
 LocLongDescription="Дает +10 к меткости и +10 к защите от целей, находящихся ниже солдата."
 LocHelpText="Дает +10 к меткости и +10 к защите от целей, находящихся ниже солдата."
-LocPromotionPopupText="<Bullet/> Дает +10 к меткости и +10 к защите от целей, находящихся ниже.<br/><Bullet/> Способность не добавляет защитных бонусов, если солдат дезориентирован, оглушен, паникует, охвачен огнём или иным образом ослаблен."
+LocPromotionPopupText="<Bullet/> Дает +10 к меткости и +10 к защите от целей, находящихся ниже.<br/> Способность не добавляет защитных бонусов, если солдат дезориентирован, оглушен, паникует, охвачен огнём или иным образом ослаблен."
 
 [Executioner_LW X2AbilityTemplate]
 LocFriendlyName="Палач"
 LocFlyOverText="Палач"
+; LWOTC Needs Translation
 LocLongDescription="Дает +<Ability:EXECUTIONER_AIM_BONUS/> к меткости и +<Ability:EXECUTIONER_CRIT_BONUS/> к шансу нанести критический урон против целей, потерявших половину или больше от базового здоровья."
 LocHelpText="Дает +<Ability:EXECUTIONER_AIM_BONUS/> к меткости и +<Ability:EXECUTIONER_CRIT_BONUS/> к шансу нанести критический урон против целей, потерявших половину или больше от базового здоровья."
-LocPromotionPopupText="<Bullet/> Дает +<Ability:EXECUTIONER_AIM_BONUS/> к меткости и +<Ability:EXECUTIONER_CRIT_BONUS/> к шансу нанести критический урон против целей, потерявших половину или больше от базового здоровья.<br/>"
+LocPromotionPopupText=""
+; End Translation
 
 [Resilience X2AbilityTemplate]
 LocFriendlyName="Стойкость"
@@ -139,35 +155,39 @@ LocFriendlyName="Агрессия"
 LocFlyOverText="Агрессия"
 LocLongDescription="Дает +5 к шансу критического урона за каждого видимого врага; максимум: +30."
 LocHelpText="Дает +5 к шансу критического урона за каждого видимого врага; максимум: +30."
-LocPromotionPopupText="<Bullet/> Дает +5 к шансу критического урона за каждого видимого врага; максимум: +30.<br/><Bullet/> Враги, видимые благодаря \"общему виду\", учитываются.<br/>"
+LocPromotionPopupText="<Bullet/> Дает +5 к шансу критического урона за каждого видимого врага; максимум: +30.<br/> Враги, видимые благодаря \"общему виду\", учитываются."
 
 [BringEmOn X2AbilityTemplate]
 LocFriendlyName="Давай, налетай!"
 LocFlyOverText="Давай, налетай!"
-LocLongDescription="Добавляет +1 к критическому урону за каждых двух видимых врагов; максимум: +8. Работает с основным оружием солдата и взрывчаткой."
-LocHelpText="Добавляет +1 к критическому урону за каждых двух видимых врагов; максимум: +8. Работает с основным оружием солдата и взрывчаткой."
-LocPromotionPopupText="<Bullet/> Добавляет +1 к критическому урону за каждых двух видимых врагов; максимум: +8.<br/><Bullet/> Враги, видимые благодаря \"общему виду\", учитываются.<br/><Bullet/> Относится к урону от основного оружия солдата и, если есть способность Сильнейшие Взрывы, к взрывчатке (гранаты, ракеты и т.д.).<br/>"
+; LWOTC Needs Translation
+LocLongDescription="Критические попадания наносят на 1 ед. урона больше за каждых двух видимых врагов, максимум +8. Бонус действует на оружие бойца (<Ability:BOUND_WEAPON_NAME/>) и взрывчатку."
+LocHelpText="Критические попадания наносят на 1 ед. урона больше за каждых двух видимых врагов, максимум +8. Бонус действует на оружие бойца (<Ability:BOUND_WEAPON_NAME/>) и взрывчатку."
+LocPromotionPopupText="<Bullet/> Бонус учитывает врагов, видимых на дистанции дальнего обзора.<br/><Bullet/> Применяется к урону оружия бойца <Ability:BOUND_WEAPON_NAME/> и, если у бойца есть способность «Мощные взрывы», к взрывчатке (осколочным гранатам, ракетам и т. п.).<br/>"
+; End Translation
 
 [HardTarget X2AbilityTemplate]
 LocFriendlyName="Трудная мишень"
 LocFlyOverText="Трудная мишень"
-LocLongDescription="Дает +5 к уклонению за каждого видимого врага, максимум - +30."
-LocHelpText="Дает +5 к уклонению за каждого видимого врага, максимум - +30."
-LocPromotionPopupText="<Bullet/> Дает +5 к уклонению за каждого видимого врага; максимум - +30.<br/><Bullet/> Враги, видимые благодаря \"общему виду\", не учитываются.<br/><Bullet/> Способность не добавляет защитных бонусов если солдат дезориентирован, оглушен, паникует, охвачен огнём или ослаблен."
+LocLongDescription="Дает <Ability:HT_DODGE_BONUS_PER_ENEMY/> к уклонению за каждого видимого врага, максимум - <Ability:HT_MAX_DODGE_BONUS/>."
+LocHelpText="Дает <Ability:HT_DODGE_BONUS_PER_ENEMY/> к уклонению за каждого видимого врага, максимум - <Ability:HT_MAX_DODGE_BONUS/>."
+LocPromotionPopupText="<Bullet/> Дает +5 к уклонению за каждого видимого врага; максимум - +30.<br/><Bullet/> Враги, видимые благодаря \"общему виду\", не учитываются. Способность не добавляет защитных бонусов если солдат дезориентирован, оглушен, паникует, охвачен огнём или ослаблен."
 
+; LWOTC Needs Translation (2)
 [Infighter X2AbilityTemplate]
 LocFriendlyName="Звезда ринга"
 LocFlyOverText="Звезда ринга"
 LocLongDescription="Дает +<Ability:INFIGHTER_DODGE_BONUS/> к уклонению против атак в пределах 4 клеток."
 LocHelpText="Дает +<Ability:INFIGHTER_DODGE_BONUS/> к уклонению против атак в пределах 4 клеток."
-LocPromotionPopupText="<Bullet/> Дает +<Ability:INFIGHTER_DODGE_BONUS/> к уклонению против атак в пределах 4 клеток.<br/><Bullet/> Распространяется на атаки в рукопашной.<br/><Bullet/> Способность не добавляет защитных бонусов если солдат дезориентирован, оглушен, паникует, охвачен огнём или иным образом ослаблен."
+LocPromotionPopupText="<Bullet/> Бонус к уклонению также действует против атак ближнего боя.<br/><Bullet/> Способность не даёт защитных бонусов, если боец дезориентирован, оглушён, паникует или иным образом выведен из строя.<br/><Bullet/> Горение не влияет на эту способность."
+; End Translation (2)
 
 [DepthPerception X2AbilityTemplate]
 LocFriendlyName="Глазомер"
 LocFlyOverText="Глазомер"
-LocLongDescription="Добавляет +5 к меткости и снижает уклонение врагов на 25 при стрельбе с более высокой позиции, чем та, где находится цель."
-LocHelpText="Добавляет +5 к меткости и снижает уклонение врагов на 25 при стрельбе с более высокой позиции, чем та, где находится цель."
-LocPromotionPopupText="<Bullet/> Добавляет +5 к меткости и снижает уклонение врагов на 25 при стрельбе с более высокой позиции, чем та, где находится цель.<br/>"
+LocLongDescription="Добавляет <Ability:DP_AIM_BONUS> к меткости и снижает уклонение врагов на <Ability:DP_ANTIDODGE_BONUS> при стрельбе с более высокой позиции, чем та, где находится цель."
+LocHelpText="Добавляет <Ability:DP_AIM_BONUS> к меткости и снижает уклонение врагов на <Ability:DP_ANTIDODGE_BONUS> при стрельбе с более высокой позиции, чем та, где находится цель."
+LocPromotionPopupText="<Bullet/> Добавляет <Ability:DP_AIM_BONUS> к меткости и снижает уклонение врагов на <Ability:DP_ANTIDODGE_BONUS> при стрельбе с более высокой позиции, чем та, где находится цель."
 
 [WilltoSurvive X2AbilityTemplate]
 LocFriendlyName="Воля к жизни"
@@ -179,17 +199,20 @@ LocPromotionPopupText="<Bullet/> Если солдат в укрытии и ат
 [LightEmUp X2AbilityTemplate]
 LocFriendlyName="Огонь по цели!"
 LocFlyOverText="Огонь по цели!"
+; LWOTC Needs Translation
 LocLongDescription="Стандартный выстрел из основного оружия в качестве первого действия не заканчивает ход."
 LocHelpText="Стандартный выстрел из основного оружия в качестве первого действия не заканчивает ход."
-LocPromotionPopupText="<Bullet/> Стандартный выстрел из основного оружия в качестве первого действия не заканчивает ход.<br/>"
+LocPromotionPopupText=""
+; End Translation
 
 [CloseEncounters X2AbilityTemplate]
 LocFriendlyName="Близкие контакты"
 LocFlyOverText="Близкие контакты"
 LocLongDescription="Один раз за ход предоставляет дополнительное действие после обычного выстрела из основного оружия по врагу в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток."
 LocHelpText="Один раз за ход предоставляет дополнительное действие после обычного выстрела из основного оружия по врагу в пределах <Ability:CLOSE_ENCOUNTERS_RANGE/> клеток."
-LocPromotionPopupText="<Bullet/> Один раз за ход предоставляет дополнительное действие после обычного выстрела из основного оружия по врагу в пределах 4 клеток.<br/><Bullet/> Красная окружность показывает дальность действия способности.<br/><Bullet/> Не может быть использовано вместе со способностью \"Стрельба на бегу\".<br/>"
+LocPromotionPopupText="<Bullet/> Один раз за ход предоставляет дополнительное действие после обычного выстрела из основного оружия по врагу в пределах 4 клеток.<br/><Bullet/> Красная окружность показывает дальность действия способности.<br/> Не может быть использовано вместе со способностью \"Стрельба на бегу\"."
 
+; LWOTC Needs Translation
 [LoneWolf X2AbilityTemplate]
 LocFriendlyName="Одинокий волк"
 LocFlyOverText="Одинокий волк"
@@ -210,64 +233,79 @@ LocFriendlyName="Двойной выстрел"
 LocFlyOverText="Двойной выстрел"
 LocLongDescription="Особая атака: два выстрела в цель из основного оружия. Требует оба действия. Второй выстрел получает штраф -10 к меткости."
 LocHelpText="Два выстрела в цель со штрафом - 10 к меткости для второго выстрела."
-LocPromotionPopupText="<Bullet/> Двойной выстрел позволяет дважды атаковать цель; второй выстрел получает штраф -10 к меткости. Требует оба действия, заканчивает ход.<br/><Bullet/> Требует <Ability:SelfAmmoCost/> ед. боекомплекта. Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/>"
+; LWOTC Needs Translation
+LocPromotionPopupText="<Bullet/> Двойной выстрел позволяет дважды атаковать цель; второй выстрел получает штраф -10 к меткости. Требует оба действия, заканчивает ход.<br/><Bullet/> Требует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/>"
+; End Translation
 
 [TraverseFire X2AbilityTemplate]
 LocFriendlyName="Перекрестный огонь"
 LocFlyOverText="Перекрестный огонь"
-LocLongDescription="После стандартного выстрела из основного оружия в качестве первого действия можно совершить второе действие (не перемещение)."
-LocHelpText="После стандартного выстрела из основного оружия в качестве первого действия можно совершить второе действие (не перемещение)."
-LocPromotionPopupText="<Bullet/> После стандартного выстрела из основного оружия в качестве первого действия можно совершить второе действие (не перемещение).<br/>"
+LocLongDescription="После стандартного выстрела из оружия <Ability:BoundWeaponName> первым действием вы можете выполнить ещё одно действие, не связанное с перемещением."
+LocHelpText="После стандартного выстрела из оружия <Ability:BoundWeaponName> первым действием вы можете выполнить ещё одно действие, не связанное с перемещением."
+LocPromotionPopupText="<Bullet> Способность можно активировать только один раз за ход.<br><Bullet> Бесплатные действия, не наносящие урон, не отменяют действие способности «Огонь на ходу»."
 
+; LWOTC needs translation
 [WalkFire X2AbilityTemplate]
 LocFriendlyName="Прицельная очередь"
 LocFlyOverText="Прицельная очередь"
 LocLongDescription="Исключительно меткая очередь выстрелов, получающая бонус +<Ability:WALK_FIRE_AIM_BONUS> к меткости, но наносящая <Ability:WALK_FIRE_DMG>% урона со штрафом -<Ability:WALK_FIRE_CRIT_MALUS> к шансу критического попадания. Использует <Ability:SelfAmmoCost/> ед. боекомплекта."
 LocHelpText="Особый выстрел: +<Ability:WALK_FIRE_AIM_BONUS> к меткости, -<Ability:WALK_FIRE_CRIT_MALUS> к шансу критического попадания, <Ability:WALK_FIRE_DMG>% урона, использует <Ability:SelfAmmoCost/> ед. боекомплекта."
-LocPromotionPopupText="<Bullet/> Особый выстрел: солдат корректирует прицел в середине очереди из автоматического оружия, получая +<Ability:WALK_FIRE_AIM_BONUS> к меткости и -<Ability:WALK_FIRE_CRIT_MALUS> к шансу критического попадания. Штраф: <Ability:WALK_FIRE_DMG>% к урону.<br/><Bullet/> Требует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Используется один раз за ход.<br/><Bullet/> Необходимо автоматическое оружие. Не действует в случае, если основным оружием является дробовик или снайперская винтовка."
+LocPromotionPopupText="<Bullet/> Особый выстрел: солдат корректирует прицел в середине очереди из автоматического оружия, получая +<Ability:WALK_FIRE_AIM_BONUS> к меткости и -<Ability:WALK_FIRE_CRIT_MALUS> к шансу критического попадания. Штраф: <Ability:WALK_FIRE_DMG>% к урону.<br/><Bullet/> Требует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Используется один раз за ход. Необходимо автоматическое оружие. Не действует в случае, если основным оружием является дробовик или снайперская винтовка."
+; End translation
 
 [PrecisionShot X2AbilityTemplate]
 LocFriendlyName="Точный выстрел"
 LocFlyOverText="Точный выстрел"
+; LWOTC needs translation (2)
 LocLongDescription="Особый выстрел: +<Ability:PRECISION_SHOT_CRIT_BONUS/> к шансу нанести критический урон и +<Ability:PRECISION_SHOT_CRIT_DAMAGE_MODIFIER/>% к критическому урону. Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
 LocHelpText="Особый выстрел: +<Ability:PRECISION_SHOT_CRIT_BONUS/> к шансу нанести критический урон и +<Ability:PRECISION_SHOT_CRIT_DAMAGE_MODIFIER/>% к критическому урону. Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
-LocPromotionPopupText="<Bullet/> Особый выстрел: +<Ability:PRECISION_SHOT_CRIT_BONUS/> к шансу нанести критический урон и +<Ability:PRECISION_SHOT_CRIT_DAMAGE_MODIFIER/>% к критическому урону.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
+LocPromotionPopupText="<Bullet/> Бонус к урону умножает итоговый урон после обычного расчёта."
+; End translation (2)
 
 [PrecisionShotSnapShot X2AbilityTemplate]
 LocFriendlyName="Точный выстрел"
 LocFlyOverText="Точный выстрел"
+; LWOTC needs translation (2)
 LocLongDescription="Особый выстрел: +<Ability:PRECISION_SHOT_CRIT_BONUS/> к шансу нанести критический урон и +<Ability:PRECISION_SHOT_CRIT_DAMAGE_MODIFIER/>% к критическому урону. Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
 LocHelpText="Особый выстрел: +<Ability:PRECISION_SHOT_CRIT_BONUS/> к шансу нанести критический урон и +<Ability:PRECISION_SHOT_CRIT_DAMAGE_MODIFIER/>% к критическому урону. Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
-LocPromotionPopupText="<Bullet/> Особый выстрел: +<Ability:PRECISION_SHOT_CRIT_BONUS/> к шансу нанести критический урон и +<Ability:PRECISION_SHOT_CRIT_DAMAGE_MODIFIER/>% к критическому урону.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
-
+LocPromotionPopupText="<Bullet/> Бонус к урону умножает итоговый урон после обычного расчёта."
+; End translation (2)
 
 [CyclicFire X2AbilityTemplate]
 LocFriendlyName="Серия выстрелов"
 LocFlyOverText="Серия выстрелов"
-LocLongDescription="Особая атака: производит три выстрела в цель. Требует оба действия, добавляет штраф к меткости к каждому выстрелу. Перезарядка <Ability:CYCLIC_FIRE_COOLDOWN/> хода."
-LocHelpText="Особая атака: производит три выстрела в цель. Требует оба действия, добавляет штраф к меткости. Перезарядка <Ability:CYCLIC_FIRE_COOLDOWN/> хода."
-LocPromotionPopupText="<Bullet/> Особая атака: три выстрела по цели. Требует два действия, накладывает штраф -<Ability:CYCLIC_FIRE_AIM_MALUS/> к меткости на все три выстрела.<br/><Bullet/> Расходует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Требует наличие автоматического оружия, не работает с дробовиком или снайперской винтовкой в качестве основного оружия."
+; LWOTC Needs Translation (2)
+LocLongDescription="Особая атака: производит три выстрела в цель. Требует оба действия, добавляет штраф к меткости к каждому выстрелу. Перезарядка <Ability:SelfCooldown_LW/> хода."
+LocHelpText="Особая атака: производит три выстрела в цель. Требует оба действия, добавляет штраф к меткости. Перезарядка <Ability:SelfCooldown_LW/> хода."
+LocPromotionPopupText="<Bullet/> Особый выстрел: выпустите по цели три пули одной атакой. Требует два действия; меткость каждого выстрела снижена на <Ability:CYCLIC_FIRE_AIM_MALUS/>.<br/><Bullet/> Требует <Ability:SelfAmmoCost/> ед. боеприпасов.<br/><Bullet/> Перезарядка «Циклического огня» — <Ability:SelfCooldown_LW/> ходов.<br/><Bullet/> Требуется оружие с очередью; способность недоступна, если основным оружием является снайперская винтовка."
+; End Translation (2)
 
 [StreetSweeper X2AbilityTemplate]
 LocFriendlyName="Траншейное ружье"
 LocFlyOverText="Траншейное ружье"
+; LWOTC Needs Translation
 LocLongDescription="Особый выстрел малой дальности из основного оружия типа \"дробовик\" с конусом поражения. Не наносит критический урон. Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
 LocHelpText="Особый выстрел из основного оружия типа \"дробовик\": выстрел малой дальности с конусом поражения. Ходов до перезарядки: <Ability:SelfCooldown_LW/>."
-LocPromotionPopupText="<Bullet/> Особый выстрел малой дальности из основного оружия типа \"дробовик\" с конусом поражения. Не наносит критический урон.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>, использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Недоступно для оружия других типов.<br/><Bullet/> Выстрел не способен пробить крепкие укрытия, поэтому оптимален для атак с фланга.<br/><Bullet/> Союзники в зоне поражения также могут получить урон.<br/>"
+LocPromotionPopupText="<Bullet/> Особый выстрел малой дальности из основного оружия типа «дробовик» с конусом поражения. Не наносит критический урон.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> Требует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Недоступно для оружия других типов.<br/><Bullet/> Выстрел не способен пробить крепкие укрытия, поэтому оптимален для атак с фланга.<br/><Bullet/> Союзники в зоне поражения также могут получить урон.<br/>"
+; End Translation
 
+; LWOTC Needs Translation (2)
 [SlugShot X2AbilityTemplate]
 LocFriendlyName="Выстрел пулей"
 LocFlyOverText="Выстрел пулей"
-LocLongDescription="Особый выстрел из основного оружия класса \"дробовик\": пробивает <Ability:SLUG_SHOT_PIERCE/> ед. брони и не получает штраф за дистанцию. Использует <Ability:SelfAmmoCost/> ед. боекомплекта. Ходов до перезарядки: <Ability:SLUG_SHOT_COOLDOWN/>."
+; LWOTC needs Translation (4)
+LocLongDescription="Особый выстрел только для дробовиков в основном слоте: выстрел пробивает <Ability:SLUG_SHOT_PIERCE/> ед. брони, не получает штрафов за дальность и даёт +<Ability:SLUG_SHOT_ACC_BONUS> к меткости. Расходует <Ability:SelfAmmoCost/> ед. боеприпасов. Перезарядка — <Ability:SelfCooldown_LW/> ходов."
 LocHelpText="Пробивающий броню выстрел из дробовика без штрафа за дистанцию."
-LocPromotionPopupText="<Bullet/> Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию.<br/><Bullet/> Пробивает <Ability:SLUG_SHOT_PIERCE/> ед. брони.<br/><Bullet/> Перезаряжается <Ability:SLUG_SHOT_COOLDOWN/> хода.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/>"
+LocPromotionPopupText="<Bullet/> Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию.<br/><Bullet/> Пробивает <Ability:SLUG_SHOT_PIERCE/> ед. брони.<br/><Bullet/> Перезаряжается <Ability:SelfCooldown_LW/> хода.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/>"
+
 
 [SlugShotRangeEffect X2AbilityTemplate]
 LocFriendlyName="Выстрел пулей"
 LocFlyOverText="Выстрел пулей"
-LocLongDescription="Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию. Использует <Ability:SelfAmmoCost/> ед. боекомплекта. Перезаряжается <Ability:SLUG_SHOT_COOLDOWN/> ходов."
-LocHelpText="Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию. Использует <Ability:SelfAmmoCost/> ед. боекомплекта. Перезаряжается <Ability:SLUG_SHOT_COOLDOWN/> ходов."
-LocPromotionPopupText="<Bullet/> Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию.<br/><Bullet/> Перезаряжается <Ability:SLUG_SHOT_COOLDOWN/> ходов.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/>"
+LocLongDescription="Особый выстрел только для дробовиков в основном слоте: выстрел не получает штрафов за дальность и даёт +<Ability:SLUG_SHOT_ACC_BONUS> к меткости. Расходует <Ability:SelfAmmoCost/> ед. боеприпасов. Перезарядка — <Ability:SelfCooldown_LW/> ходов."
+LocHelpText="Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию. Использует <Ability:SelfAmmoCost/> ед. боекомплекта. Перезаряжается <Ability:SelfCooldown_LW/> ходов."
+LocPromotionPopupText="<Bullet/> Особый выстрел из основного оружия класса \"дробовик\" без штрафа за дистанцию.<br/><Bullet/> Перезаряжается <Ability:SelfCooldown_LW/> ходов.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/>"
+; End Translation (4)
 
 [Commissar X2AbilityTemplate]
 LocFriendlyName="Контрольный"
@@ -283,18 +321,26 @@ LocLongDescription="Один раз за задание: выстрел из п�
 LocHelpText="Один раз за задание: выстрел из пистолета, который всегда попадает."
 LocPromotionPopupText="<Bullet/> Один раз за задание: выстрел из пистолета, который всегда попадает.<br/>"
 
+; LWOTC Needs Translation (3)
 [Gunslinger X2AbilityTemplate]
 LocFriendlyName="Ковбой"
 LocFlyOverText="Ковбой"
-LocLongDescription="Ответный выстрел из пистолета по противнику, который попытается двигаться или стрелять, находясь в пределах <Ability:GUNSLINGER_TILES_RANGE/> клеток в широком конусе огня. Гарантированно попадет и нанесет критический урон."
-LocHelpText="Улучшенный режим \"наблюдения\" с пистолетом в конусе стрельбы."
-LocPromotionPopupText="<Bullet/> Дистанция <Ability:GUNSLINGER_TILES_RANGE/> клеток.<br/><Bullet/> Перезаряжается <Ability:GUNSLINGER_COOLDOWN/> хода.<br/><Bullet/> Нельзя использовать из скрытности."
+LocLongDescription="Перейдите в особый режим наблюдения. Пока он активен, вы автоматически отвечаете выстрелом из оружия <Ability:BOUND_WEAPON_NAME> по любому врагу, который перемещается или атакует в радиусе <Ability:GUNSLINGER_TILES_RANGE> клеток. Этот выстрел гарантированно попадает и наносит критический урон."
+LocHelpText="Перейдите в особый режим наблюдения, чтобы выстреливать из оружия <Ability:BOUND_WEAPON_NAME> по любому врагу, который перемещается или атакует в радиусе <Ability:GUNSLINGER_TILES_RANGE> клеток."
+LocPromotionPopupText="<Bullet> Количество выстрелов «Стрелка» ограничено только запасом боеприпасов.<br><Bullet> Перезарядка — <Ability:SelfCooldown_LW> ходов.<br><Bullet> Нельзя использовать, оставаясь в укрытии/скрытности."
+LocFriendlyNameWhenConcealed="Стрелок (в скрытности)"
+; End Translation (3)
+
+[GunslingerShot X2AbilityTemplate]
+LocFriendlyName="Стрелок"
+LocFlyOverText="Стрелок"
+
 
 [HyperReactivePupils X2AbilityTemplate]
 LocFriendlyName="Гиперчувствительные зрачки"
 LocFlyOverText="Гиперчувствительные зрачки"
-LocLongDescription="Дает +10 к меткости при следующем выстреле из основного оружия после промаха."
-LocHelpText="Дает +10 к меткости при следующем выстреле из основного оружия после промаха."
+LocLongDescription="Дает <Ability:HYPERREACTIVE_PUPILS_AIM_BONUS> к меткости при следующем выстреле из основного оружия после промаха."
+LocHelpText="Дает <Ability:HYPERREACTIVE_PUPILS_AIM_BONUS> к меткости при следующем выстреле из основного оружия после промаха."
 LocPromotionPopupText="<Bullet/> Бонус действует до следующего попадания в цель или до конца задания.<br/><Bullet/> Атаки по площади не подвержены этому эффекту.<br/>"
 
 [SteadyWeapon X2AbilityTemplate]
@@ -307,9 +353,11 @@ LocPromotionPopupText="<Bullet/> Дает +20 к меткости при сле�
 [LockedOn X2AbilityTemplate]
 LocFriendlyName="Пристрелка"
 LocFlyOverText="Пристрелка"
-LocLongDescription="Дает +<Ability:LOCKEDON_AIM_BONUS/> к меткости и +<Ability:LOCKEDON_CRIT_BONUS/> к вероятности критического попадания при успешной повторной стрельбе по одной и той же цели."
-LocHelpText="Дает +<Ability:LOCKEDON_AIM_BONUS/> к меткости и +<Ability:LOCKEDON_CRIT_BONUS/> к вероятности критического попадания при успешой повторной стрельбе по одной и той же цели."
-LocPromotionPopupText="<Bullet/> Дает +<Ability:LOCKEDON_AIM_BONUS/> к меткости и +<Ability:LOCKEDON_CRIT_BONUS/> к вероятности критического попадания при повторной стрельбе по одной и той же цели. Не суммируется, применимо только против врагов.<br/><Bullet/> Атаки с областью действия не подвержены этому эффекту."
+; LWOTC Needs Translation (2)
+LocLongDescription="Последовательные выстрелы из оружия <Ability:BOUND_WEAPON_NAME/> по одной и той же цели дают +<Ability:LOCKEDON_AIM_BONUS/> к меткости и +<Ability:LOCKEDON_CRIT_BONUS/> к шансу критического попадания."
+LocHelpText="Последовательные выстрелы из оружия <Ability:BOUND_WEAPON_NAME/> по одной и той же цели дают +<Ability:LOCKEDON_AIM_BONUS/> к меткости и +<Ability:LOCKEDON_CRIT_BONUS/> к шансу критического попадания."
+LocPromotionPopupText="<Bullet/> Бонус не суммируется и действует только против вражеских бойцов.<br/><Bullet/> Выстрелы по области не дают этот бонус."
+; End Translation (2)
 
 [Sentinel_LW X2AbilityTemplate]
 LocFriendlyName="Часовой"
@@ -323,7 +371,7 @@ LocFriendlyName="Быстрая реакция"
 LocFlyOverText="Быстрая реакция"
 LocLongDescription="Каждый попавший в цель выстрел в режиме \"наблюдения\" позволяет сделать еще один такой же выстрел (максимум: три выстрела)."
 LocHelpText="Каждый попавший в цель выстрел в режиме \"наблюдения\" позволяет сделать еще один выстрел (максимум: три выстрела)."
-LocPromotionPopupText="<Bullet/> Каждый попавший в цель выстрел в режиме \"наблюдения\" позволяет сделать еще один такой же выстрел (максимум: три выстрела).<br/>"
+LocPromotionPopupText=""
 
 [LightningReflexes_LW X2AbilityTemplate]
 LocFriendlyName="Молниеносные рефлексы"
@@ -335,16 +383,20 @@ LocPromotionPopupText="<Bullet/> Снижает шанс попадания от
 [Cutthroat X2AbilityTemplate]
 LocFriendlyName="Головорез"
 LocFlyOverText="Головорез"
+; LWOTC Needs Translation
 LocLongDescription="Атаки против биологических врагов в рукопашной схватке игнорируют броню и имеют +<Ability:CUTTHROAT_BONUS_CRIT_CHANCE/> к шансу критического попадания и +<Ability:CUTTHROAT_BONUS_CRIT_DAMAGE/> к критическому урону."
 LocHelpText="Атаки против биологических врагов в рукопашной схватке игнорируют броню и имеют +<Ability:CUTTHROAT_BONUS_CRIT_CHANCE/> к шансу критического попадания и +<Ability:CUTTHROAT_BONUS_CRIT_DAMAGE/> к критическому урону."
-LocPromotionPopupText="<Bullet/> Атаки против биологических врагов в рукопашной схватке игнорируют броню и имеют +<Ability:CUTTHROAT_BONUS_CRIT_CHANCE/> к шансу критического попадания и +<Ability:CUTTHROAT_BONUS_CRIT_DAMAGE/> к критическому урону."
+LocPromotionPopupText=""
+; End translation
 
 [KillerInstinct X2AbilityTemplate]
 LocFriendlyName="Прирожденный убийца"
 LocFlyOverText="Прирожденный убийца"
+; LWOTC Needs Translation
 LocLongDescription="В режиме \"Стрельба на бегу\" урон при критическом попадании вырастает на <Ability:KILLER_INSTINCT_CRIT_DAMAGE_BONUS_PCT/>% до конца хода."
 LocHelpText="В режиме \"Стрельба на бегу\" урон при критическом попадании вырастает на <Ability:KILLER_INSTINCT_CRIT_DAMAGE_BONUS_PCT/>% до конца хода."
-LocPromotionPopupText="<Bullet/> В режиме \"Стрельба на бегу\" урон при критическом попадании вырастает на <Ability:KILLER_INSTINCT_CRIT_DAMAGE_BONUS_PCT/>% до конца хода.<br/>"
+LocPromotionPopupText="<Bullet/> Бонус к урону умножает итоговый урон после обычного расчёта.<br/>"
+
 
 [ExtraConditioning X2AbilityTemplate]
 LocFriendlyName="Крепкое здоровье"
@@ -352,38 +404,48 @@ LocFlyOverText="Крепкое здоровье"
 LocLongDescription="\"Стрельба на бегу\" перезаряжается на один ход быстрее."
 LocHelpText="\"Стрельба на бегу\" перезаряжается на один ход быстрее."
 LocPromotionPopupText="<Bullet/> \"Стрельба на бегу\" перезаряжается на один ход быстрее.<br/>"
-
+; End translation
 [RunAndGun_LW X2AbilityTemplate]
 LocFriendlyName="Стрельба на бегу"
 LocFlyOverText="Стрельба на бегу"
 LocLongDescription="Дает дополнительное действие после рывка."
 LocHelpText="Дает дополнительное действие после рывка."
-LocPromotionPopupText="<Bullet/> Способность \"Стрельба на бегу\" позволяет быстро сблизиться с целью или обойти ее с фланга.<br/><Bullet/> Ходов до перезарядки: <Ability:RUN_AND_GUN_COOLDOWN/>.<br/>"
+; LWOTC Needs Translation
+LocPromotionPopupText="<Bullet/> Способность «Стрельба на бегу» позволяет быстро сблизиться с целью или обойти ее с фланга.<br/><Bullet/> Ходов до перезарядки: <Ability:RUN_AND_GUN_COOLDOWN/>.<br/><Bullet/> Отключает способности, дающие дополнительные очки действия, например «Близкие встречи» и «Удар и отход».<br/>"
+; End translation
 
 [Suppression_LW X2AbilityTemplate]
 LocFriendlyName="Подавление"
 LocFlyOverText="Подавление"
-LocLongDescription="Подавляет врага плотным огнем и позволяет выстрелить, если тот начнет движение, блокирует некоторые его способности, а также снижает его меткость на <Ability:SUPPRESSIONPENALTY/>."
+; LWOTC Needs Translation
+LocLongDescription="Откройте подавляющий огонь, прижимая цель к укрытию. Если она переместится, по ней будет произведён ответный выстрел; также ограничивается использование некоторых способностей и снижается меткость цели."
 LocHelpText="Ухудшает меткость врага и позволяет выстрелить, если он двигается."
-LocPromotionPopupText="<Bullet/> Способность \"Подавление\" требует <Ability:SelfAmmoCost/> ед. боекомплекта и перезаряжается мгновенно.<br/><Bullet/> Если солдат получит урон, \"Подавление\" будет прекращено.<br/><Bullet/> Если несколько солдат подавляют одну цель, штрафы на меткость не суммируется.<br/><Bullet/> Неприменимо, если используется снайперская винтовка или дробовик.<br/><Bullet/> Подавление блокирует многие способности цели, включая использование ракет и гранат."
+LocPromotionPopupText="<Bullet> Подавление требует <Ability:SelfAmmoCost> ед. боеприпасов.<br><Bullet> У способности нет перезарядки.<br><Bullet> Подавление прекращается, если подавляющий боец получает урон или теряет боеспособность.<br><Bullet> На один ход меткость цели снижается на <Ability:SUPPRESSION_LW_AIM_MALUS>, а на всё время подавления дополнительно действует штраф <Ability:SUPPRESSIONPENALTY>.<br><Bullet> Нельзя использовать со снайперскими винтовками и дробовиками.<br><Bullet> Подавление ограничивает многие способности цели, в том числе применение ракет и гранат.<br><Bullet> Если одну цель подавляют несколько бойцов, штраф к меткости не суммируется."
+; End Translation
 
 [AreaSuppression X2AbilityTemplate]
 LocFriendlyName="Широкое подавление"
 LocFlyOverText="Широкое подавление"
-LocLongDescription="Подавляет плотным огнем нескольких врагов в радиусе 4 клеток и позволяет выстрелить в любого, кто начнет движение. Также снижает меткость на <Ability:SUPPRESSIONPENALTY/> для всех целей, пока действует подавление. Не может использоваться, пока действует маскировка."
+; LWOTC Needs Translation
+LocLongDescription="Подавляет плотным огнем нескольких врагов в радиусе 4 клеток и позволяет выстрелить в любого, кто начнет движение. Также снижает меткость на <Ability:AREA_SUPPRESSION_RADIUS_TILES> для всех целей, пока действует подавление. Не может использоваться, пока действует маскировка."
 LocHelpText="Подавляет огнем несколько целей в зоне действия."
-LocPromotionPopupText="<Bullet/> Широкое подавление недоступно, пока действует маскировка.<br/><Bullet/> Любой противник, который начнет движение, станет целью атаки, пока у подавляющего хватает патронов.<br/><Bullet/> Недоступно для дробовиков и снайперских винтовок.<br/><Bullet/> Способность требует <Ability:SelfAmmoCost/> ед. боекомплекта, плюс по 1 за каждый выстрел. Перезарядка отсутствует.<br/><Bullet/> Если солдат получит урон, подавление будет прекращено.<br/><Bullet/> Если несколько солдат подавляют одну цель, штраф на меткость не суммируется.<br/><Bullet/> Подавление блокирует многие способности цели, включая использование ракет и гранат."
+LocPromotionPopupText="<Bullet> Областное подавление нельзя использовать, пока <Ability:ClassName> находится в скрытности.<br><Bullet> Для активации требуется <Ability:SelfAmmoCost> ед. боеприпасов; расходуется <Ability:AREA_SUPPRESSION_AMMO_COST>, а каждый ответный выстрел дополнительно тратит <Ability:AREA_SUPPRESSION_SHOT_AMMO_COST> боеприпасов.<br><Bullet> У областного подавления нет перезарядки.<br><Bullet> Оно прекращается, если подавляющий боец получает урон или теряет боеспособность.<br><Bullet> Меткость подавляемых целей снижается на <Ability:SUPPRESSIONPENALTY> на всё время подавления.<br><Bullet> Нельзя использовать со снайперскими винтовками и дробовиками.<br><Bullet> Способность ограничивает многие действия целей, включая применение ракет и гранат.<br><Bullet> Если одну цель подавляют несколько бойцов, штраф к меткости не суммируется."
+; End Translation
 
 [SuppressionShot_LW X2AbilityTemplate]
 LocFriendlyName="Подавление"
 LocFlyOverText="Подавление"
 
+[AreaSuppressionShot_LW X2AbilityTemplate]
+LocFriendlyName="Зональное подавление"
+LocFlyOverText="Зональное подавление"
+
 [DangerZone X2AbilityTemplate]
 LocFriendlyName="Опасная зона"
 LocFlyOverText="Опасная зона"
-LocLongDescription="Широкое подавление действует в радиусе 5 клеток."
+LocLongDescription="Широкое подавление действует в радиусе <Ability:DANGER_ZONE_AREA_SUPPRESSION_RADIUS_TILES> клеток."
 LocHelpText="Расширяет зону подавления."
-LocPromotionPopupText="<Bullet/> Широкое подавление действует в радиусе 5 клеток.<br/>"
+LocPromotionPopupText=""
 
 [Lockdown X2AbilityTemplate]
 LocFriendlyName="Ловушка"
@@ -392,12 +454,12 @@ LocLongDescription="Дает +<Ability:LOCKDOWN_TOHIT_BONUS/> к попадан�
 LocHelpText="Увеличивает шанс попадания и урон при стрельбе по противникам, пытающимся двигаться при подавлении огнем."
 LocPromotionPopupText="<Bullet/> Дает +<Ability:LOCKDOWN_TOHIT_BONUS/> к попаданию по противникам, пытающимся двигаться при подавлении огнем.<br/><Bullet/> Эффект суммируется с другими бонусами к ответному огню."
 
-[Lockdown X2AbilityTemplate]
-LocFriendlyName="Ловушка"
-LocFlyOverText="Ловушка"
-LocLongDescription="Дает +<Ability:LOCKDOWN_TOHIT_BONUS/> к попаданию по противникам, пытающимся двигаться при подавлении огнем."
-LocHelpText="Увеличивает шанс попадания и урон при стрельбе по противникам, пытающимся двигаться при подавлении огнем."
-LocPromotionPopupText="<Bullet/> Дает +<Ability:LOCKDOWN_TOHIT_BONUS/> к попаданию по противникам, пытающимся двигаться при подавлении огнем.<br/><Bullet/> Эффект суммируется с другими бонусами к ответному огню."
+[LockdownBonuses X2AbilityTemplate]
+LocFriendlyName="Приковывающий огонь"
+LocFlyOverText="Приковывающий огонь"
+LocLongDescription="Получите +<Ability:LOCKDOWN_TOHIT_BONUS/> к меткости при стрельбе по врагам, пытающимся переместиться под подавляющим огнём."
+LocHelpText="Повышает шанс попадания и урон по врагам, пытающимся переместиться под подавляющим огнём."
+LocPromotionPopupText="<Bullet/> Получите +<Ability:LOCKDOWN_TOHIT_BONUS/> к меткости при стрельбе по врагам, пытающимся переместиться под подавляющим огнём.<br/><Bullet/> Эффект суммируется с другими бонусами ответного огня."
 
 [Mayhem X2AbilityTemplate]
 LocFriendlyName="Хаос"
@@ -416,23 +478,27 @@ LocPromotionPopupText="<Bullet/> Дает +<Ability:MAYHEM_DAMAGE_BONUS_PCT/>% �
 [Interference X2AbilityTemplate]
 LocFriendlyName="Помеха"
 LocFlyOverText="Помеха"
-LocLongDescription="\"Гремлин\" отменяет режим \"наблюдения\" для цели."
+; LWOTC Needs Translation (2)
+LocLongDescription="ГРЕМЛИН отменяет режим \"наблюдения\" для цели."
+; End Translation (2)
 LocHelpText="Отменяет режим \"наблюдения\" для цели."
-LocPromotionPopupText="<Bullet/> Отменяет режим \"наблюдения\" для цели.<br/><Bullet/> Свободное действие.<br/><Bullet/> 3 заряда на бой. Улучшение гремлина добавляет +2 заряда.<br/>"
+; LWOTC Needs Translation (2)
+LocPromotionPopupText="<Bullet/> Отменяет режим \"наблюдения\" для цели.<br/><Bullet/> Свободное действие.<br/><Bullet/> 3 заряда на бой. Улучшение ГРЕМЛИНА добавляет +2 заряда.<br/>"
+; End Translation (2)
 
 [DamageControl X2AbilityTemplate]
 LocFriendlyName="Борьба за выживание"
 LocFlyOverText="Борьба за выживание"
-LocLongDescription="После получения урона добавляются 2 единицы брони до конца следующего хода."
-LocHelpText="После получения урона добавляются 2 единицы брони до конца следующего хода."
-LocPromotionPopupText="<Bullet/> Попадания временно делают вашу броню прочнее. После получения урона добавляются 2 единицы брони до конца следующего хода."
+LocLongDescription="После получения урона добавляются <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони до конца следующего хода."
+LocHelpText="После получения урона добавляются <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони до конца следующего хода."
+LocPromotionPopupText="<Bullet/> Попадания временно делают вашу броню прочнее. После получения урона добавляются <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони до конца следующего хода."
 
 [DamageControlPassive X2AbilityTemplate]
 LocFriendlyName="Борьба за выживание"
 LocFlyOverText="Борьба за выживание"
-LocLongDescription="После получения урона добавляются 2 единицы брони до конца следующего хода."
-LocHelpText="После получения урона добавляются 2 единицы брони до конца следующего хода."
-LocPromotionPopupText="<Bullet/> После получения урона добавляются 2 единицы брони до конца следующего хода."
+LocLongDescription="После получения урона добавляются <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони до конца следующего хода."
+LocHelpText="После получения урона добавляются <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони до конца следующего хода."
+LocPromotionPopupText="<Bullet/> После получения урона добавляются <Ability:DAMAGE_CONTROL_BONUS_ARMOR> единицы брони до конца следующего хода."
 
 [Evasive X2AbilityTemplate]
 LocFriendlyName="Неуловимый"
@@ -451,9 +517,12 @@ LocPromotionPopupText="<Bullet/> Эта способность, как прав�
 [SnapShot X2AbilityTemplate]
 LocFriendlyName="Выстрел навскидку"
 LocFlyOverText="Выстрел навскидку"
-LocLongDescription="Вы можете стрелять из своей снайперской винтовки после движения, но с большими штрафами к меткости, если цель находится далее 5 клеток \"Общего вида\"."
 LocHelpText="Выстрел по цели"
-LocPromotionPopupText="<Bullet/> Солдат может использовать стандартные выстрелы из снайперской винтовки после движения, но получает большие штрафы к меткости по целям на расстоянии дальше 22 клеток.<br/><Bullet/> Солдат не может входить в режим \"наблюдения\" со снайперской винтовкой после движения.<br/>"
+;LocLongDescription="You may take standard shots with your sniper rifle after moving, but you suffer severe range penalties beyond 5 tiles of squadsight range."
+;LocPromotionPopupText="<Bullet/> The soldier may now use the sniper rifle for standard shots after moving, but suffers extreme aim penalties at targets beyond 22 tiles range on those shots.<br/><Bullet/> The soldier may not enter overwatch with the sniper rifle after moving.<br/>
+
+LocLongDescription="Вы можете стрелять из своей снайперской винтовки после движения, но с большими штрафами к меткости, если цель находится далее 5 клеток \"Общего вида\"."
+LocPromotionPopupText="<Bullet/> Эта способность существенно меняет стиль игры за <Ability:ClassName>: боец может делать обычные выстрелы из снайперской винтовки после перемещения, но все выстрелы по целям дальше 22 клеток получают огромный штраф к меткости независимо от того, двигался ли боец.<br/><Bullet/> Работает только со снайперскими винтовками.<br/><Bullet/> Уменьшает штрафы за стрельбу вблизи на <Ability:WPN_HANDLING_MODIFIER/> по сравнению с обычными снайперскими винтовками.<br/><Bullet/> После 5 клеток дальнего обзора меткость дополнительно снижается на 20 за каждую клетку.<br/><Bullet/> Для некоторых особых выстрелов и «Дальнего наблюдения» по-прежнему требуются оба действия. «Дальнее наблюдение» позволяет стрелять из режима наблюдения на дистанции дальнего обзора, но штрафы за дальность сохраняются.<br/><Bullet/> Боец не произведёт выстрел из режима наблюдения или «Зоны поражения», если шанс попадания меньше 1%."
 
 [SnapShotOverwatch X2AbilityTemplate]
 LocFriendlyName="Наблюдение"
@@ -472,22 +541,26 @@ LocHelpText="Позволяет вести огонь из снайперско�
 LocFriendlyName="Вирус"
 LocFlyOverText="Вирус"
 LocLongDescription="Взломанные враги получают урон и теряют все свои действия на первом ходу после окончания эффекта взлома."
-LocHelpText="Взломанные враги получают урон и теряют действия, когда заканчивается эффект взлома."
+LocHelpText="Взломанные юниты получают урон и теряют действия, когда эффект взлома заканчивается. Эта способность позволяет бойцу класса <Ability:ClassName> уничтожать дронов АДВЕНТА, не выходя из скрытности. Даже если цель переживёт атаку «Троян», скрытность не будет нарушена."
 LocPromotionPopupText="<Bullet/> Враги, взломанные при помощи \"Протокола блокировки\", получают 0-8 урона и теряют все свои действия на первом ходу после окончания эффекта взлома.<br/><Bullet/> Применяется к целям, оглушенным или захваченным \"Протоколом блокировки\".<br/><Bullet/> Урон зависит от соотношения параметров взлома у солдата и защиты от взлома у цели.<br/>"
 
 [Covert X2AbilityTemplate]
 LocFriendlyName="Скрытность"
 LocFlyOverText="Скрытность"
+; LWOTC Needs Translation
 LocLongDescription="Радиус обнаружения противника уменьшается на <Ability:COVERT_DETECTION_RANGE_REDUCTION/>%"
 LocHelpText="Уменьшает дистанцию, на которой противники вас обнаруживают."
-LocPromotionPopupText="<Bullet/> На <Ability:COVERT_DETECTION_RANGE_REDUCTION/>% уменьшает дистанцию, на которой противники вас обнаруживают (отображается красными клетками вокруг врагов, пока что не знающих о вашем присутствии).<br/><Bullet/> Также несколько снижает время проникновения для этого солдата.<br/><Bullet/> Не распространяется на охранные вышки \"Адвента\"."
+LocPromotionPopupText="<Bullet/> Дальность обнаружения показана красными клетками вокруг врагов, которые ещё не заметили вас.<br/><Bullet/> Эта способность также немного уменьшает влияние бойца на время проникновения.<br/><Bullet/> Не действует на охранные башни АДВЕНТА."
+; End Translation
 
 [Ghostwalker X2AbilityTemplate]
 LocFriendlyName="Призрак"
 LocFlyOverText="Призрак"
+; LWOTC Needs Translation (2)
 LocLongDescription="Активируйте эту способность, чтобы снизить вражескую дальность обнаружения на <Ability:GHOSTWALKER_DETECTION_RANGE_REDUCTION/>% в течение <Ability:GHOSTWALKER_DURATION/> хода(ов). "
 LocHelpText="Снижает вражескую дальность обнаружения на <Ability:GHOSTWALKER_DETECTION_RANGE_REDUCTION/>% в течение <Ability:GHOSTWALKER_DURATION/> хода(ов)."
-LocPromotionPopupText="<Bullet/> Способность снижает вражескую дальность обнаружения на <Ability:GHOSTWALKER_DETECTION_RANGE_REDUCTION/>% на <Ability:GHOSTWALKER_DURATION/> хода(ов), включая текущий (отображается красными клетками вокруг врагов, пока что не знающих о вашем присутствии).<br/><Bullet/> Перезаряжается <Ability:SelfCooldown/> ходов.<br/><Bullet/> Не требует действия для активации.<br/><Bullet/> Также несколько снижает время проникновения для этого солдата.<br/><Bullet/> Не распространяется на охранные вышки \"Адвента\"."
+LocPromotionPopupText="<Bullet/> Дальность обнаружения показана красными клетками вокруг врагов, которые ещё не заметили вас.<br/><Bullet/> Учитывает текущий ход.<br/><Bullet/> Перезарядка «Призрачного странника» — <Ability:SelfCooldown_LW/> ходов.<br/><Bullet/> Активация не требует действий.<br/><Bullet/> Эта способность также немного уменьшает влияние бойца на время проникновения.<br/><Bullet/> Не действует на охранные башни АДВЕНТА."
+; End Translation (2)
 
 [Kubikuri X2AbilityTemplate]
 LocFriendlyName="Кубикири"
@@ -499,9 +572,9 @@ LocPromotionPopupText="<Bullet/> Особый выстрел по цели, ко
 [CombatAwareness X2AbilityTemplate]
 LocFriendlyName="Внимательность"
 LocFlyOverText="Внимательность"
-LocLongDescription="Добавляет 15 к Защите и 1 ед. брони в режиме \"наблюдения\"."
-LocHelpText="Добавляет 15 к Защите и 1 ед. брони в режиме \"наблюдения\"."
-LocPromotionPopupText="<Bullet/> Добавляет 15 к Защите и 1 ед. брони в режиме \"наблюдения\".<br/><Bullet/> Способность не добавляет защитных бонусов если солдат дезориентирован, оглушен, паникует, охвачен огнём или ослаблен."
+LocLongDescription="Добавляет <Ability:COMBAT_AWARENESS_BONUS_DEFENSE> к Защите и <Ability:COMBAT_AWARENESS_BONUS_ARMOR> ед. брони в режиме \"наблюдения\"."
+LocHelpText="Добавляет <Ability:COMBAT_AWARENESS_BONUS_DEFENSE> к Защите и <Ability:COMBAT_AWARENESS_BONUS_ARMOR> ед. брони в режиме \"наблюдения\"."
+LocPromotionPopupText="<Bullet/> Добавляет <Ability:COMBAT_AWARENESS_BONUS_DEFENSE> к Защите и <Ability:COMBAT_AWARENESS_BONUS_ARMOR> ед. брони в режиме \"наблюдения\".<br/><Bullet/> Способность не добавляет защитных бонусов если солдат дезориентирован, оглушен, паникует, охвачен огнём или ослаблен."
 
 [FieldSurgeon X2AbilityTemplate]
 LocFriendlyName="Полевой хирург"
@@ -529,16 +602,16 @@ LocFriendlyName="Спаситель"
 LocFlyOverText="Спаситель"
 LocLongDescription="Медицинские способности восстанавливают на <Ability:SAVIOR_BONUS_HEAL/> ед. здоровья больше."
 LocHelpText="Медицинские способности восстанавливают на <Ability:SAVIOR_BONUS_HEAL/> ед. здоровья больше."
-LocPromotionPopupText="<Bullet/> Эффект добавляется к лечению \"Гремлина\", аптечкам и способностям \"Восстановления\".<br/>"
+LocPromotionPopupText="<Bullet/> Эффект добавляется к лечению ГРЕМЛИНА, аптечкам и способностям \"Восстановления\".<br/>"
 
 [DenseSmoke X2AbilityTemplate]
 LocFriendlyName="Густой дым"
 LocFlyOverText="Густой дым"
 LocLongDescription="Ваши дымовые гранаты дают дополнительно +<Ability:DenseSmoke_DefenseBonus_LW> к Защите."
 LocHelpText="Ваши дымовые гранаты дают дополнительно +<Ability:DenseSmoke_DefenseBonus_LW> к Защите."
-LocPromotionPopupText="<Bullet/> Ваши дымовые гранаты дают дополнительно +<Ability:DenseSmoke_DefenseBonus_LW> ед. к Защите солдатам, находящимся в дыму (суммарно +<Ability:DenseSmoke_DefenseTotal_LW>).<br/>"
+LocPromotionPopupText="<Bullet/> Ваши дымовые гранаты дают дополнительно +<Ability:DenseSmoke_DefenseBonus_LW> ед. к Защите солдатам, находящимся в дыму (суммарно +<Ability:DenseSmoke_DefenseTotal_LW>).<br/><Bullet/> Предоставляет одну бесплатную дымовую гранату.<br/><Bullet/> Эффект применяется, если боец входит в дым после его создания.<br/><Bullet/> Действует и на врагов."
 
-; LWOTC Translated
+; LWOTC Needs Translation
 [CombatStims_LW X2AbilityTemplate]
 LocFriendlyName="Стимпак добавка"
 LocFlyOverText="Стимпак добавка"
@@ -552,7 +625,7 @@ LocFlyOverText="Био частицы"
 LocLongDescription="Дымовые гранаты лечат юнитов на <Ability:RegenSmoke_HealAmount_LW> ОЗ вначале каждого хода. Максимальное лечение ОЗ на каждую миссию: <Ability:RegenSmoke_MaxHealAmount_LW>."
 LocHelpText="Дымовые гранаты лечат юнитов  вначале каждого хода."
 LocPromotionPopupText="<Bullet> Эффект применяется когда юнит заходит в дым.<br><Bullet> Не работает на механических юнитов.<br><Bullet> Работает на вргов."
-
+; End Translation
 
 [Collateral_LW X2AbilityTemplate]
 LocFriendlyName="Заградительный огонь"
@@ -561,8 +634,7 @@ LocHelpText="Стреляет серию из оружия <Ability:WeaponName/>
 LocFlyOverText="Заградительный огонь"
 LocPromotionPopupText="<Bullet/> Стреляет серию из оружия <Ability:WeaponName/> по местности, повреждая укрытия.<br/><Bullet/> Наносит высокий урон по укрытиям в области.<br/><Bullet/> Заградительный огонь наносит 40% от базового урона оружия врагам в зоне действия способности.<br/><Bullet/> Требует 2ед. боекомплекта и перезаряжается 4 хода.<br/>"
 
-; End Translated
-
+;POTENTIALLY DEPRECATED AS WELL AS ALL TRANSLATIONS
 [DenseSmokeGrenade X2GrenadeTemplate]
 FriendlyName="Граната с густым дымом"
 FriendlyNamePlural="Гранаты с густым дымом"
@@ -573,6 +645,7 @@ ThrownAbilityHelpText="Увеличивает защиту в радиусе д�
 LaunchedAbilityname="Выстрел гранатой с густым дымом"
 LaunchedAbilityHelpText="Увеличивает защиту в радиусе действия."
 
+;POTENTIALLY DEPRECATED AS WELL AS ALL TRANSLATIONS
 [DenseSmokeGrenadeMk2 X2GrenadeTemplate]
 FriendlyName="Бомба с густым дымом"
 FriendlyNamePlural="Бомбы с густым дымом"
@@ -588,12 +661,21 @@ LocFriendlyName="Травматические гранаты"
 LocFlyOverText="Травматические гранаты"
 LocLongDescription="Ваши свето-шумовые гранаты имеют шанс 50% оглушить противника в зоне поражения гранаты на 1 ход."
 LocHelpText="Ваши свето-шумовые гранаты имеют шанс 50% оглушить противника."
+; LWOTC Needs Translation
 LocPromotionPopupText="<Bullet/> Ваши свето-шумовые гранаты имеют шанс 50% оглушить противника.<br/><Bullet/> Противники, иммуные к действию светошумовых гранат, не могут быть оглушены"<br/>
+; End Translation
 
+[DedicatedSuppression_LW X2AbilityTemplate]
+LocFriendlyName="Целенаправленное подавление"
+LocLongDescription="Получение урона больше не отменяет подавление и зональное подавление."
+LocHelpText="Получение урона больше не отменяет подавление и зональное подавление."
+
+;POTENTIALLY DEPRECATED
 [X2Item_StingGrenade]
 DenseSmokeGrenadeEffectDisplayName="Травматическая граната"
 DenseSmokeGrenadeEffectDisplayDesc="Травматические гранаты имеют шанс 50% оглушить противника в зоне поражения."
 
+;POTENTIALLY DEPRECATED
 [StingGrenade X2GrenadeTemplate]
 FriendlyName="Травматическая граната"
 FriendlyNamePlural="Травматические гранаты"
@@ -609,97 +691,113 @@ LocFriendlyName="Быстрое развертывание"
 LocFlyOverText="Быстрое развертывание"
 LocLongDescription="Активируйте эту способность перед броском или выстрелом гранатой поддержки, и вы не потратите на это действие."
 LocHelpText="Активируйте эту способность перед броском или выстрелом гранатой поддержки, и вы не потратите на это действие."
+; LWOTC Needs Translation (2)
 LocPromotionPopupText="<Bullet/> Активируйте эту способность перед броском или выстрелом гранатой поддержки, и вы не потратите на это действие.<br/><Bullet/> Действует на дымовые и свето-шумовые гранаты, а также формовые заряды и боевые сканеры.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/>"
+; End Translation (2)
 
 [CombatRush X2AbilityTemplate]
 LocFriendlyName="Боевой азарт"
 LocFlyOverText="Боевой азарт"
-LocLongDescription="Когда вы убиваете противника, ближайшие союзники временно получают бонус к меткости, шансу критического урона и мобильности."
-LocHelpText="Убийство противника дает ближайшим союзникам бонус к меткости, шансу критического урона и мобильности."
-LocPromotionPopupText="<Bullet/> \"Боевой азарт\" срабатывает при убийстве противника и дает союзникам в пределах семи клеток +10 к меткости, +10 к шансу критического урона и +1 к мобильности.<br/><Bullet/> Эффект длится до конца следующего после убийства хода.<br/><Bullet/> Срабатывает не чаще, чем раз в пять ходов.<br/>"
+LocLongDescription="Убив врага, вы даёте союзникам в радиусе <Ability:COMBAT_RUSH_RADIUS> клеток +<Ability:COMBAT_RUSH_AIM_BONUS> к меткости, +<Ability:COMBAT_RUSH_CRIT_BONUS> к шансу критического попадания и +<Ability:COMBAT_RUSH_MOBILITY_BONUS> к мобильности на <Ability:COMBAT_RUSH_DURATION> ходов. Перезарядка: <Ability:COMBAT_RUSH_COOLDOWN> ходов."
+LocHelpText="Убив врага, вы даёте союзникам в радиусе <Ability:COMBAT_RUSH_RADIUS> клеток +<Ability:COMBAT_RUSH_AIM_BONUS> к меткости, +<Ability:COMBAT_RUSH_CRIT_BONUS> к шансу критического попадания и +<Ability:COMBAT_RUSH_MOBILITY_BONUS> к мобильности на <Ability:COMBAT_RUSH_DURATION> ходов. Перезарядка: <Ability:COMBAT_RUSH_COOLDOWN> ходов."
+LocPromotionPopupText="<Bullet/> «Боевой порыв» срабатывает после убийства врага и даёт союзникам в радиусе <Ability:COMBAT_RUSH_RADIUS> клеток +<Ability:COMBAT_RUSH_AIM_BONUS> к меткости, +<Ability:COMBAT_RUSH_CRIT_BONUS> к шансу критического попадания и +<Ability:COMBAT_RUSH_MOBILITY_BONUS> к мобильности.<br/><Bullet/> Эффект длится <Ability:COMBAT_RUSH_DURATION> после убийства.<br/><Bullet/> Срабатывает не чаще одного раза в <Ability:COMBAT_RUSH_COOLDOWN> ходов.<br/>"
 
 [BroadcastCombatRush X2AbilityTemplate]
 LocFriendlyName="Боевой азарт"
 LocFlyOverText="Боевой азарт"
-LocLongDescription="Союзник поблизости добавляет +10 к меткости, +10 к шансу критического урона и +1 к мобильности на два хода."
-LocHelpText="Союзник поблизости добавляет +10 к меткости, +10 к шансу критического урона и +1 к мобильности на два хода."
+LocLongDescription="Находящийся рядом союзник даёт вам +<Ability:COMBAT_RUSH_AIM_BONUS> к меткости, +<Ability:COMBAT_RUSH_CRIT_BONUS> к шансу критического попадания и +<Ability:COMBAT_RUSH_MOBILITY_BONUS> к мобильности на <Ability:COMBAT_RUSH_DURATION> ходов."
+LocHelpText="Находящийся рядом союзник даёт вам +<Ability:COMBAT_RUSH_AIM_BONUS> к меткости, +<Ability:COMBAT_RUSH_CRIT_BONUS> к шансу критического попадания и +<Ability:COMBAT_RUSH_MOBILITY_BONUS> к мобильности на <Ability:COMBAT_RUSH_DURATION> ходов."
 
+; LWOTC Needs Translation (2)
 [GrazingFire X2AbilityTemplate]
 LocFriendlyName="Беспокоящий огонь"
 LocFlyOverText="Беспокоящий огонь"
 LocLongDescription="Промахи из основного оружия имеют дополнительный шанс стать \"царапиной\"."
 LocHelpText="Промахи могут становиться \"царапинами\"."
 LocPromotionPopupText="<Bullet/> Промахи из основного оружия обычно имеют <Ability:GRAZING_FIRE_SUCCESS_CHANCE>% шанс стать \"царапиной\".<br/><Bullet/> Эффект применяется после обычного расчета попадания/промаха.<br/><Bullet/> Цели, у которых имеются очки уклонения, вычитают эти очки из шанса стать \"царапиной\".<br/> <Bullet/> Работает на все виды оружия, включая метательные ножи и оружие ближнего боя. <br/>"
+; End Translation (2)
 
 [HeavyFrags X2AbilityTemplate]
 LocFriendlyName="Мощный взрыватель"
 LocFlyOverText="Мощный взрыватель"
 LocLongDescription="Взрывы гранат наносят дополнительную единицу урона."
 LocHelpText="Взрывы гранат наносят дополнительную единицу урона."
+; LWOTC Needs Translation (2)
 LocPromotionPopupText="<Bullet/> Ваши гранаты наносят на 1 ед. больше урона, но требуют специальной подготовки.<br/><Bullet/> Это распространяется также на производимые гранатами эффекты например, горение.<br/>"
+; End Translation (2)
 
 [Airdrop X2AbilityTemplate]
 LocFriendlyName="Спецдоставка"
 LocFlyOverText="Спецдоставка"
-LocLongDescription="\"Гремлин\" доставляет боевую гранату выбранному союзнику. Количество использований за миссию: <Ability:NUM_AIRDROP_CHARGES/>."
+; LWOTC Needs Translation
+LocLongDescription="ГРЕМЛИН доставляет боевую гранату выбранному союзнику. Количество использований за миссию: <Ability:NUM_AIRDROP_CHARGES/>."
 LocHelpText="Доставляет гранату выбранному союзнику."
-LocPromotionPopupText="<Bullet/> Доставляет боевую гранату выбранному союзнику.<br/><Bullet/> Изначально предоставляет осколочную гранату, но по мере улучшения технологий XCOM будет доступно и более мощное вооружение.<br/><Bullet/> Активация \"Спецдоставки\" расходует одно действие и не заканчивает ход солдата, не нарушает скрытность.<br/><Bullet/> Количество использований за миссию: <Ability:NUM_AIRDROP_CHARGES/>."
+LocPromotionPopupText="<Bullet/> Доставляет боевую гранату выбранному союзнику.<br/><Bullet/> Изначально предоставляет осколочную гранату, но по мере улучшения технологий XCOM будет доступно и более мощное вооружение.<br/><Bullet/> Активация «Спецдоставки» расходует одно действие и не заканчивает ход солдата.<br/><Bullet/> Активация не нарушает скрытность.<br/><Bullet/> Количество использований за миссию: <Ability:NUM_AIRDROP_CHARGES/>."
+; End Translation
 
 [SwordSlice_LW X2AbilityTemplate]
 LocFriendlyName="Молния"
 LocFlyOverText="Молния"
 LocLongDescription="Атака мечом любого противника в пределах дальности перемещения. Наносит +1 ед. урона за каждые <Ability:FLECHE_BONUS_DAMAGE_PER_TILES/> клетки между вами и противником."
 LocHelpText="Атака мечом любого противника в пределах дальности перемещения. Наносит увеличенный урон с большей дистанции."
+; LWOTC Needs Translation
 LocPromotionPopupText="<Bullet/> Можно активировать способность \"Молния\" при наведении курсора движения на противника.<br/><Bullet/> Солдат может потратить оба действия, сделав рывок, и после этого выполнить удар по врагу, стоящему рядом.<br/><Bullet/> Наносит +1 ед. урона за каждые <Ability:FLECHE_BONUS_DAMAGE_PER_TILES/> клетки между позицией солдата на начало хода и противником, максимум до <Ability:MAX_SLICE_FLECHE_DAMAGE/> ед. бонусного урона.<br/>"
+; End Translation
 
 [Fleche X2AbilityTemplate]
 LocFriendlyName="Молния"
 LocFlyOverText="Молния"
 LocLongDescription="Атака мечом любого противника в пределах дальности перемещения. Наносит +1 ед. урона за каждые <Ability:FLECHE_BONUS_DAMAGE_PER_TILES/> клетки между вами и противником."
 LocHelpText="Атака мечом любого противника в пределах дальности перемещения. Наносит увеличенный урон с большей дистанции."
+; LWOTC Needs Translation
 LocPromotionPopupText="<Bullet/> Чтобы активировать способность \"Молния\", наведите курсор движения на противника.<br/><Bullet/> Солдат может потратить оба действия, сделав рывок, и после этого выполнить удар по врагу, стоящему рядом.<br/><Bullet/> Наносит +1 ед. урона за каждые <Ability:FLECHE_BONUS_DAMAGE_PER_TILES/> клетки между позицией солдата на начало хода и противником, максимум до <Ability:MAX_SLICE_FLECHE_DAMAGE/> ед. бонусного урона.<br/>"
+; End Translation
 
 [FullKit X2AbilityTemplate]
 LocFriendlyName="Полный набор"
 LocFlyOverText="Полный набор"
 LocLongDescription="Добавляет +1 заряд к каждому типу гранаты во вспомогательных ячейках."
 LocHelpText="Добавляет +1 заряд к каждому типу гранаты во вспомогательных ячейках."
+; LWOTC Needs Translation
 LocPromotionPopupText="<Bullet/> Добавляет 1 использование каждой гранате во вспомогательных ячейках.<br/><Bullet/> Действует на взрывчатку, гранаты поддержки и боевые сканеры.<br/><Bullet/> Дополнительные заряды гранат, предоставляемые \"Дымкой\" и \"Осветителем\", не учитываются. <br/>"
+; End Translation
 
 [Bastion X2AbilityTemplate]
 LocFriendlyName="Бастион"
 LocLongDescription="\"Крепость\" теперь предоставляет иммунитет ближайшим союзникам."
 LocHelpText="\"Крепость\" теперь предоставляет иммунитет ближайшим союзникам."
 LocFlyOverText="Бастион"
-LocPromotionPopupText="<Bullet/> Способность \"Бастион\" действует в радиусе 4 клеток.<br/><Bullet/> Союзники, попавшие в радиус действия после движения, немедленно избавляются от всех негативных физических воздействий.<br/>"
+LocPromotionPopupText="<Bullet/> Способность \"Бастион\" действует в радиусе <Ability:BASTION_RADIUS_TILES> клеток.<br/><Bullet/> Союзники, попавшие в радиус действия после движения, немедленно избавляются от всех негативных физических воздействий."
 
 [BastionPassive X2AbilityTemplate]
 LocFriendlyName="Бастион"
 LocLongDescription="\"Крепость\" теперь предоставляет иммунитет ближайшим союзникам."
 LocHelpText="\"Крепость\" теперь предоставляет иммунитет ближайшим союзникам."
 LocFlyOverText="Бастион"
-LocPromotionPopupText="<Bullet/> Способность \"Бастион\" действует в радиусе 4 клеток.<br/><Bullet/> Союзники, попавшие в радиус действия после движения, немедленно избавляются от всех негативных физических воздействий.<br/>"
+LocPromotionPopupText="<Bullet/> Способность \"Бастион\" действует в радиусе <Ability:BASTION_RADIUS_TILES> клеток.<br/><Bullet/> Союзники, попавшие в радиус действия после движения, немедленно избавляются от всех негативных физических воздействий."
 
 [BastionCleanse X2AbilityTemplate]
 LocFriendlyName="Бастион"
 LocLongDescription="\"Крепость\" теперь предоставляет иммунитет ближайшим союзникам."
 LocHelpText="\"Крепость\" теперь предоставляет иммунитет ближайшим союзникам."
 LocFlyOverText="Бастион"
-LocPromotionPopupText="<Bullet/> Способность \"Бастион\" действует в радиусе 4 клеток.<br/><Bullet/> Союзники, попавшие в радиус действия после движения, немедленно избавляются от всех негативных физических воздействий.<br/>"
+LocPromotionPopupText="<Bullet/> Способность \"Бастион\" действует в радиусе <Ability:BASTION_RADIUS_TILES> клеток.<br/><Bullet/> Союзники, попавшие в радиус действия после движения, немедленно избавляются от всех негативных физических воздействий."
 
 [IronCurtain X2AbilityTemplate]
 LocFriendlyName="Гиря на цепи"
 LocFlyOverText="Гиря на цепи"
+; LWOTC Needs Translation
 LocLongDescription="Особый выстрел, наносящий <Ability:IRON_CURTAIN_DAMAGE_MODIFIER/>% урона, но снижающий мобильность цели на <Ability:IRON_CURTAIN_MOB_DAMAGE_DURATION/> хода(ов). Выстрел из основного оружия с конусом поражения."
 LocHelpText="Особый выстрел, наносящий слабый урон, но снижающий мобильность цели."
-LocPromotionPopupText="<Bullet/> При попадании \"Гиря на цепи\" (атака с конусом поражения) наносит <Ability:IRON_CURTAIN_DAMAGE_MODIFIER/>% обычного урона и дает цели -<Ability:IRON_CURTAIN_MOBILITY_DAMAGE> к мобильности на <Ability:IRON_CURTAIN_MOB_DAMAGE_DURATION/> хода(ов).<br/><Bullet/> Количество ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> Использует <Ability:IRON_CURTAIN_AMMO_COST> ед. боекомплекта.<br/><Bullet/> Можно использовать после перемещения.<br/><Bullet/> Недоступно для дробовиков и снайперских винтовок.<br/><Bullet/> Союзники, попавшие в зону поражения, также могут получить урон.<br/>"
+LocPromotionPopupText="<Bullet/> При попадании «Гиря на цепи» (атака с конусом поражения) наносит <Ability:IRON_CURTAIN_DAMAGE_MODIFIER/>% обычного урона и снижает мобильность цели на <Ability:IRON_CURTAIN_MOBILITY_DAMAGE> на <Ability:IRON_CURTAIN_MOB_DAMAGE_DURATION/> ход(а).<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> Использует <Ability:IRON_CURTAIN_AMMO_COST> ед. боекомплекта.<br/><Bullet/> Можно использовать после перемещения.<br/><Bullet/> Недоступно для дробовиков и снайперских винтовок.<br/><Bullet/> Союзники в конусе поражения также могут получить урон.<br/><Bullet/> Штраф к мобильности применяется, даже если атака не попала в цель."
+; End Translation
 
 [IronCurtainShot X2AbilityTemplate]
 LocFriendlyName="Гиря на цепи"
 LocFlyOverText="Гиря на цепи"
-LocLongDescription="Особый выстрел, наносящий слабый урон, но снижающий мобильность цели на ближайшие ходы. Выстрел из основного оружия с конусом поражения."
+LocLongDescription="Особый выстрел наносит <Ability:IRON_CURTAIN_DAMAGE_MODIFIER/>% обычного урона, но снижает мобильность цели на следующие <Ability:IRON_CURTAIN_MOB_DAMAGE_DURATION/> ход(а). Атака конусом из основного оружия. Штраф к мобильности применяется, даже если выстрел не попал."
 LocHelpText="Особый выстрел, наносящий слабый урон, но снижающий мобильность цели."
-LocPromotionPopupText="<Bullet/> /> При попадании \"Гиря на цепи\" наносит <Ability:IRON_CURTAIN_DAMAGE_MODIFIER/>% обычного урона и дает цели -<Ability:IRON_CURTAIN_MOBILITY_DAMAGE> к мобильности на <Ability:IRON_CURTAIN_MOB_DAMAGE_DURATION/> хода(ов).<br/><Bullet/> Количество ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> Использует <Ability:SelfAmmoCost/> ед. боекомплекта.<br/><Bullet/> Можно использовать после перемещения.<br/><Bullet/> Недоступно для дробовиков и снайперских винтовок.<br/>"
+LocPromotionPopupText="<Bullet/> При попадании «Гиря на цепи» наносит <Ability:IRON_CURTAIN_DAMAGE_MODIFIER/>% обычного урона и снижает мобильность цели на <Ability:IRON_CURTAIN_MOBILITY_DAMAGE> на <Ability:IRON_CURTAIN_MOB_DAMAGE_DURATION/> ход(а).<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> Использует <Ability:IRON_CURTAIN_AMMO_COST> ед. боекомплекта.<br/><Bullet/> Можно использовать после перемещения.<br/><Bullet/> Недоступно для дробовиков и снайперских винтовок.<br/><Bullet/> Союзники в конусе поражения также могут получить урон.<br/><Bullet/> Штраф к мобильности применяется, даже если атака не попала в цель."
 str_IronCurtainEffect="Гиря на цепи"
 
 [Slash_LW X2AbilityTemplate]
@@ -707,35 +805,40 @@ LocFriendlyName="Выпад"
 LocFlyOverText="Выпад"
 LocLongDescription="Атака противника мечом. Требует одно действие."
 LocHelpText="Атака противника мечом. Требует одно действие."
-LocPromotionPopupText="<Bullet/> Атака ближайшего противника мечом.<br/><Bullet/> Требует одно действие и не заканчивает ход, позволяя сделать две последовательные атаки стоящего рядом противника."
+LocPromotionPopupText="<Bullet/> Атака ближайшего противника мечом. Требует одно действие и не заканчивает ход, позволяя сделать две последовательные атаки стоящего рядом противника."
+
+[SwordSlice X2AbilityTemplate]
+LocFriendlyName="Рубящий удар с рывка"
+LocPromotionPopupText="<Bullet/> Чтобы применить способность «Рубящий удар», наведите курсор перемещения на врага.<br/><Bullet/> Боец класса <Ability:ClassName> может выполнить рывок, потратив оба действия на перемещение, и всё равно нанести рубящий удар по соседнему врагу.<br/>"
 
 [AbsorptionFields X2AbilityTemplate]
 LocFriendlyName="Поглощающие поля"
 LocFlyOverText="Поглощающие поля"
-LocLongDescription="Силовое поле, поглощающее 33% урона в течение двух ходов. Перезарядка 6 ходов."
-LocHelpText="Силовое поле, поглощающее 33% урона в течение двух ходов. Перезарядка 6 ходов."
-LocPromotionPopupText="<Bullet/> Силовое поле, поглощающее 33% урона в течение двух ходов.<br/><Bullet/> Перезарядка 6 ходов (включая ход, на котором поле активировано).<br/><Bullet/> Использует одно действие и не заканчивает ход.<br/><Bullet/> Бронебойное оружие не игнорирует этот эффект.<br/>"
+LocLongDescription="Силовое поле, поглощающее <Ability:ABSORPTION_FIELDS_DURATION> урона в течение двух ходов. Перезарядка <Ability:ABSORPTION_FIELDS_COOLDOWN> ходов."
+LocHelpText="Силовое поле, поглощающее <Ability:ABSORPTION_FIELDS_DURATION> урона в течение двух ходов. Перезарядка <Ability:ABSORPTION_FIELDS_COOLDOWN> ходов."
+LocPromotionPopupText="<Bullet/> Силовое поле, поглощающее <Ability:ABSORPTION_FIELDS_DURATION> урона в течение двух ходов.<br/><Bullet/> Перезарядка <Ability:ABSORPTION_FIELDS_COOLDOWN> ходов (включая ход, на котором поле активировано).<br/><Bullet/> Использует одно действие и не заканчивает ход.<br/><Bullet/> Бронебойное оружие не игнорирует этот эффект.<br/>"
 
 [BodyShield X2AbilityTemplate]
 LocFriendlyName="Направленный щит"
 LocFlyOverText="Направленный щит"
-LocLongDescription="Выбранный противник получает -20 к меткости и -50% к шансу критического урона против этого солдата."
-LocHelpText="Выбранный противник получает -20 к меткости и -50% к шансу критического урона против этого солдата."
-LocPromotionPopupText="<Bullet/> Выбранный противник получает -20 к меткости и -50% к шансу критического урона против этого солдата.<br/><Bullet/> Свободное действие.<br/><Bullet/> Перезарядка <Ability:SelfCooldown/> ходов."
+LocLongDescription="Выберите врага свободным действием: его меткость против вас уменьшится на <Ability:BODY_SHIELD_DEF_BONUS>, а шанс критического попадания — на <Ability:BODY_SHIELD_ENEMY_CRIT_MALUS> на <Ability:BODY_SHIELD_DURATION> ходов. Перезарядка: <Ability:SelfCooldown_LW> ходов."
+LocHelpText="Выберите врага свободным действием: его меткость против вас уменьшится на <Ability:BODY_SHIELD_DEF_BONUS>, а шанс критического попадания — на <Ability:BODY_SHIELD_ENEMY_CRIT_MALUS> на <Ability:BODY_SHIELD_DURATION> ходов. Перезарядка: <Ability:SelfCooldown_LW> ходов."
+; LWOTC Needs Translation
+LocPromotionPopupText="<Bullet/> У выбранного врага меткость против этого бойца снижена на <Ability:BODY_SHIELD_DEF_BONUS>, а шанс критического попадания — на <Ability:BODY_SHIELD_ENEMY_CRIT_MALUS>.<br/><Bullet/> Это свободное действие.<br/><Bullet/> Перезарядка «Живого щита» — <Ability:SelfCooldown_LW/> ходов."
+; End Translation
 
 [EmergencyLifeSupport X2AbilityTemplate]
 LocFriendlyName="Экстренная стабилизация"
 LocFlyOverText="Экстренная стабилизация"
-LocLongDescription="Экстренная стабилизация гарантирует, что первый летальный урон на задании не приведет к мгновенной смерти. Также увеличивает время до гибели, в течение которого солдат истекает кровью."
-LocHelpText="Гарантирует, что первый летальный урон на задании не приведет к мгновенной смерти, а также увеличивает время, в течение которого солдат истекает кровью."
-LocPromotionPopupText="<Bullet/> Экстренная стабилизация гарантирует, что первый летальный урон на задании не приведет к мгновенной смерти.<br/><Bullet/> Также добавляет 2 хода к таймеру истекания кровью.<br/>"
+LocLongDescription="Один раз за задание, когда здоровье бойца падает до 0, он гарантированно переходит в состояние кровотечения (если только эффект не препятствует этому). Время до смерти увеличивается на <Ability:EMERGENCY_LIFE_SUPPORT_BONUS_BLEEDINGOUT_TURNS> ходов."
+LocPromotionPopupText="<Bullet/> Экстренная стабилизация гарантирует, что первый летальный урон на задании не приведет к мгновенной смерти.<br/><Bullet/> Также добавляет <Ability:EMERGENCY_LIFE_SUPPORT_BONUS_BLEEDINGOUT_TURNS> хода к таймеру истекания кровью.<br/>"
 
 [IronSkin X2AbilityTemplate]
 LocFriendlyName="Железная кожа"
 LocFlyOverText="Железная кожа"
-LocLongDescription="Снижает на 3 ед. урон, получаемый в рукопашной схватке."
-LocHelpText="Снижает на 3 ед. урон, получаемый в рукопашной схватке."
-LocPromotionPopupText="<Bullet/> Снижает на 3 ед. урон, получаемый в рукопашной схватке.<br/>"
+LocLongDescription="Снижает на <Ability:IRON_SKIN_MELEE_DAMAGE_REDUCTION> ед. урон, получаемый в рукопашной схватке."
+LocHelpText="Снижает на <Ability:IRON_SKIN_MELEE_DAMAGE_REDUCTION> ед. урон, получаемый в рукопашной схватке."
+LocPromotionPopupText="<Bullet/> Снижает на <Ability:IRON_SKIN_MELEE_DAMAGE_REDUCTION> ед. урон, получаемый в рукопашной схватке.<br/><Bullet/> Эта способность не может снизить получаемый урон до 0."
 
 [SmartMacrophages X2AbilityTemplate]
 LocFriendlyName="Умные макрофаги"
@@ -749,7 +852,9 @@ LocFriendlyName="Слияние разумов"
 LocFlyOverText="Слияние разумов"
 LocLongDescription="Союзник получает бонус к воле и шансу крит. урона, а также единицы щита до начала следующего хода игрока."
 LocHelptext="Союзник временно получает бонус к воле и крит. шансу, и также единицы щита."
-LocPromotionPopupText="<Bullet/> Добавляет выбранному союзнику 1 временную единицу здоровья (\"щит\") и еще +1 за каждые 20 ед. пси-атаки солдата, использующего \"Слияние разумов\".<br/><Bullet/> Также предоставляет союзнику +1 к шансу на крит за каждые 7 единиц пси-атаки.<br/><Bullet/> Добавляет выбранному союзнику 1 единицу воли за каждые 5 ед. пси-атаки.<br/><Bullet/> Эффект длится до начала следующего хода пси-агента.<br/><Bullet/> Ходов до перезарядки: <Ability:SelfCooldown_LW/>.<br/><Bullet/> Целью может быть только видимый союзник.<br/><Bullet/> Улучшенные пси-усилители добавляют бонус к воле и временные очки здоровья.<br/><Bullet/> Использует одно действие, не заканчивает ход.<br/><Bullet/> Если Пси-агент используется в качестве Смотрителя убежища, эта способность снизит шанс вербовки Безликого под видом повстанца на 40% (суммируется с прочими подобными способностями).<br/>"
+; LWOTC Needs Translation (2)
+LocPromotionPopupText="<Bullet/> Даёт выбранному союзнику +1/+<Ability:MIND_MERGE_AMP_MG_TOTAL_SHIELDHP>/+<Ability:MIND_MERGE_AMP_BM_TOTAL_SHIELDHP> единиц временной брони в зависимости от уровня пси-усилителя, а также +1 единицу временной брони за каждые <Ability:MIND_MERGE_SHIELDHP_DIVISOR> очков пси-атаки бойца класса <Ability:ClassName>, применившего «Слияние разумов».<br/><Bullet/> Даёт выбранному союзнику +0/+<Ability:MIND_MERGE_AMP_MG_TOTAL_WILL>/+<Ability:MIND_MERGE_AMP_BM_TOTAL_WILL> к воле в зависимости от уровня пси-усилителя, а также +1 к воле за каждые <Ability:MIND_MERGE_WILL_DIVISOR> очков пси-атаки бойца <Ability:ClassName>.<br/><Bullet/> Даёт выбранному союзнику +0/+<Ability:MIND_MERGE_AMP_MG_TOTAL_CRIT>/+<Ability:MIND_MERGE_AMP_BM_TOTAL_CRIT> к шансу критического попадания в зависимости от уровня пси-усилителя, а также +1 к критическому шансу за каждые <Ability:MIND_MERGE_CRIT_DIVISOR> очков пси-атаки бойца <Ability:ClassName>.<br/><Bullet/> Эффект действует до следующего хода бойца <Ability:ClassName>.<br/><Bullet/> Перезарядка «Слияния разумов» — <Ability:SelfCooldown_LW/> ходов.<br/><Bullet/> Требует одно действие и не завершает ход.<br/><Bullet/> Целями могут быть только видимые союзники.<br/><Bullet/> Улучшенные пси-усилители дают дополнительные бонусы к этим эффектам.<br/><Bullet/> Если <Ability:ClassName> назначен советником убежища, «Слияние разумов» снижает вероятность вербовки мятежников-лицехватов на 40% (эффект суммируется с другими подобными способностями).<br/>"
+; End Translation (2)
 
 [SoulMerge X2AbilityTemplate]
 LocFriendlyName="Слияние душ"
@@ -757,6 +862,13 @@ LocFlyOverText="Слияние душ"
 LocLongDescription="Повышает эффективность Слияния Разумов, предоставляя бонус к шансу критического попадания, воле и единицам щита, а также  уменьшая время перезарядки способности."
 LocHelpText="Увеличивает эффективность \"Слияния разумов\"."
 LocPromotionPopupText="<Bullet/> Ускоряет перезарядку \"Слияния разумов\" на 1 ход.<br/><Bullet/> Бонус к временным ОЗ увеличивается до 1 за каждые 20 ед. пси-атаки.<br/><Bullet/> Бонус к воле улучшается до 1 за каждые 5 ед. пси-атаки<br/><Bullet/> Предоставляет бонус к шансу критического попадания, равный 1% за каждые 5 единиц пси-атаки."
+
+[NullLance X2AbilityTemplate]
+LocFriendlyName="Нулевое копьё"
+LocLongDescription="Выпустите луч чудовищной силы, наносящий урон всем целям на своём пути. Атака пробивает нескольких врагов и препятствия."
+LocHelpText="Выпустите луч псионической энергии, наносящий урон всем целям на своём пути."
+LocFlyOverText="Нулевое копьё"
+LocPromotionPopupText="<Bullet/> Перезарядка «Нулевого копья» — <Ability:SelfCooldown_LW/> ход(а).<br/><Bullet/> Урон «Нулевого копья» можно увеличить, улучшив пси-усилитель бойца класса <Ability:ClassName>.<br/>"
 
 [Shadowstrike_LW X2AbilityTemplate]
 LocFriendlyName="Удар из тени"
@@ -766,10 +878,12 @@ LocPromotionPopupText="<Bullet/> Бонус от \"Удара из тени\" р
 
 [Formidable X2AbilityTemplate]
 LocFriendlyName="Непоколебимость"
-LocLongDescription="Ваше снаряжение включает дополнительный слой защиты, дающий 2 аблативных единицы щита и <Ability:BlastPadding/>% меньше повреждений от взрывов."
-LocHelpText="Получение единиц щита и уменьшение урона от взрывов."
 LocFlyOverText="Непоколебимость"
-LocPromotionPopupText="<Bullet/> Непоколебимость уменьшает урон от взрывов на <Ability:BlastPadding/>%."
+; LWOTC Needs Translation
+LocLongDescription="Снаряжение дополнено защитным слоем, который даёт <Ability:FORMIDABLE_ABLATIVE_HP/> дополнительных единиц временной брони и уменьшает урон от взрывов на <Ability:FORMIDABLE_EXPLOSIVES_DR/>%."
+LocHelpText="Получение единиц щита и уменьшение урона от взрывов."
+LocPromotionPopupText="<Bullet/> Непоколебимость уменьшает урон от взрывов на <Ability:FORMIDABLE_EXPLOSIVES_DR/>%."
+; End Translation
 
 ; Updated perk loc
 
@@ -786,16 +900,18 @@ LocFriendlyName="Зона поражения"
 LocLongDescription="Ответный выстрел по противнику, который попытается двигаться или стрелять, находясь в зоне огня."
 LocHelpText="Улучшенный режим \"наблюдения\" в конусе стрельбы."
 LocFlyOverText="Зона поражения"
-LocPromotionPopupText="<Bullet/> Способность \"Зона поражения\" дает возможность сделать столько выстрелов, сколько позволит боекомплект.<br/><Bullet/> Предоставляет \"общий вид\", даже если у солдата нет способности \"Дальнее наблюдение\".<br/><Bullet/> Перезаряжается <Ability:SelfCooldown/> хода.<br/>"
+LocPromotionPopupText="<Bullet/> Способность \"Зона поражения\" дает возможность сделать столько выстрелов, сколько позволит боекомплект.<br/><Bullet/> Предоставляет \"общий вид\", даже если у солдата нет способности \"Дальнее наблюдение\".<br/><Bullet/> Перезаряжается <Ability:SelfCooldown_LW/> хода.<br/>"
 LocFriendlyNameWhenConcealed="Зона поражения (маскировка)"
 
 [XComGame.DeathFromAbove X2AbilityTemplate]
 [DeathFromAbove X2AbilityTemplate]
 LocFriendlyName="Смерть с небес"
-LocLongDescription="Убийство противника, находящегося ниже вас по высоте, из оружия типа <Ability:WeaponName/> предоставляет дополнительное действие и не завершает ход. Срабатывает один раз за ход. Также повышает точность стрельбы из снайперских винтовок на дальней дистанции."
-LocHelpText="Убийство противника, находящегося ниже вас по высоте, из оружия типа <Ability:WeaponName/> предоставляет дополнительное действие и не завершает ход."
+; LWOTC Needs Translation
+LocLongDescription="Один раз за ход после убийства врага, находящегося ниже, из оружия <Ability:BOUND_WEAPON_NAME> вы получаете стандартное действие. Кроме того, штрафы за дальность для снайперских и векторных винтовок уменьшаются на <Ability:DFA_RANGE_PENALTY_NEGATION_MODIFIER>%."
+LocHelpText="Один раз за ход после убийства врага, находящегося ниже, из оружия <Ability:BOUND_WEAPON_NAME> вы получаете стандартное действие. Кроме того, штрафы за дальность для снайперских и векторных винтовок уменьшаются на <Ability:DFA_RANGE_PENALTY_NEGATION_MODIFIER>%."
+; End Translation
 LocFlyOverText="Смерть с небес"
-LocPromotionPopupText="<Bullet/> \"Смерть с небес\" хорошо сочетается с выстрелами из пистолета, а также просто может повысить мобильность снайпера.<br/><Bullet/> Также повышает точность стрельбы из снайперских винтовок на дальней дистанции, если боец находится выше противника."
+LocPromotionPopupText="<Bullet> Не срабатывает, если враг убит первым выстрелом способности «Двойной выстрел».<br><Bullet> Уменьшает штрафы за дальность для снайперских и векторных винтовок на <Ability:DFA_RANGE_PENALTY_NEGATION_MODIFIER>%."
 
 [XComGame.Implacable X2AbilityTemplate]
 [Implacable X2AbilityTemplate]
@@ -803,7 +919,7 @@ LocFriendlyName="Безжалостность"
 LocLongDescription="Если в течение вашего хода вы совершите одно убийство или больше, то получите одно движение."
 LocHelpText="Получите дополнительное движение за убийство в течение вашего хода."
 LocFlyOverText="Безжалостность"
-LocPromotionPopupText="<Bullet/> \"Молния\" не может быть использована вместе с дополнительным ходом от способности \"Безжалостность\".<br/>"
+LocPromotionPopupText=""
 
 [XComGame.VolatileMix X2AbilityTemplate]
 [VolatileMix X2AbilityTemplate]
@@ -829,6 +945,7 @@ LocHelpText="Выстрел из пистолета первым действи�
 LocFlyOverText="Скорострел"
 LocPromotionPopupText="<Bullet/> Способность \"Скорострел\" позволяет солдату поражать несколько целей в течение одного хода.<br/>"
 
+; LWOTC Needs Translation (2)
 [XComGame.SharpshooterAim X2AbilityTemplate]
 [SharpshooterAim X2AbilityTemplate]
 LocFriendlyName="Прицеливание"
@@ -836,6 +953,7 @@ LocLongDescription="\"Глухая оборона\" теперь добавля�
 LocHelpText="\"Глухая оборона\" теперь добавляет +<Ability:SHARPSHOOTERAIMBONUS/> к меткости и +<Ability:SHARPSHOOTERAIM_CRITBONUS/> к криту при первом выстреле на следующем ходу."
 LocFlyOverText="Глухая оборона - меткость"
 LocPromotionPopupText="<Bullet/> Бонус от способности \"Прицеливание\" может быть применен к выстрелу из любого оружия.<br/>"
+; End Translation (2)
 
 [XComGame.LightningHands X2AbilityTemplate]
 [LightningHands X2AbilityTemplate]
@@ -843,15 +961,15 @@ LocFriendlyName="Руки-молнии"
 LocLongDescription="Выстрелите в цель из пистолета. Вы не тратите действие на эту атаку."
 LocHelpText="Выстрелите в цель из пистолета. Вы не тратите действие на эту атаку."
 LocFlyOverText="Руки-молнии"
-LocPromotionPopupText="<Bullet/> Способность \"Руки-молнии\" хорошо сочетается с другими способностями, требующими два действия, поскольку позволяет применить их на том же ходу.<br/><Bullet/> Перезаряжается <Ability:SelfCooldown/> хода.<br/>"
+LocPromotionPopupText="<Bullet/> Способность \"Руки-молнии\" хорошо сочетается с другими способностями, требующими два действия, поскольку позволяет применить их на том же ходу.<br/><Bullet/> Перезаряжается <Ability:SelfCooldown_LW/> хода.<br/>"
 
 [XComGame.IntrusionProtocol X2AbilityTemplate]
 [IntrusionProtocol X2AbilityTemplate]
 LocFriendlyName="Взлом"
-LocLongDescription="Попытаться взломать систему безопасности на сетевой точке доступа при помощи \"Гремлина\"."
-LocHelpText="Вы можете взламывать цели с помощью \"Гремлина\"."
+LocLongDescription="Попытайтесь удалённо взломать сетевую точку доступа с помощью <Ability:BOUND_WEAPON_NAME/>."
+LocHelpText="Вы можете удалённо взламывать цели с помощью <Ability:BOUND_WEAPON_NAME/>."
 LocFlyOverText="Взлом"
-LocPromotionPopupText="<Bullet/> Объекты на карте (сундуки, терминалы и т.п.) могут быть дистанционно взломаны при помощи \"Гремлина\".<br/>"
+LocPromotionPopupText="<Bullet/> Объекты на карте (контейнеры, рабочие станции и т. п.) можно взламывать на расстоянии с помощью <Ability:BOUND_WEAPON_NAME/>.<br/>"
 
 [XComGame.EverVigilant X2AbilityTemplate]
 [EverVigilant X2AbilityTemplate]
@@ -898,11 +1016,13 @@ LocFriendlyName="Маскировка"
 LocLongDescription="Немедленная активация маскировки один раз за задание."
 LocHelpText="Немедленная активация маскировки один раз за задание."
 LocFlyOverText="Маскировка"
+; LWOTC Needs Translation
 LocPromotionPopupText="<Bullet/> Маскировку можно активировать в любом месте, но когда солдат при этом находится внутри вражеской зоны обнаружения и уязвим с фланга, его немедленно обнаруживают.<br/><Bullet/> Требует одно действие и заканчивает ход."
+; End Translation
 
 [XComGame.RevivalProtocol X2AbilityTemplate]
 [RevivalProtocol X2AbilityTemplate]
-LocPromotionPopupText="<Bullet/> Способность \"Протокол восстановления\" может приводить в чувство потерявших сознание солдат, в том числе стабилизированных после тяжелого ранения.<br/><Bullet/> При использовании в качестве первого действия не заканчивает ход.<br/><Bullet/> Изначально обладает двумя зарядами, но улучшение \"Гремлина\" позволяет увеличить их число.<br/>"
+LocPromotionPopupText="<Bullet/> Способность \"Протокол восстановления\" может приводить в чувство потерявших сознание солдат, в том числе стабилизированных после тяжелого ранения.<br/><Bullet/> При использовании в качестве первого действия не заканчивает ход.<br/><Bullet/> Изначально обладает двумя зарядами, но улучшение ГРЕМЛИНА позволяет увеличить их число.<br/>"
 
 [XComGame.ThreatAssessment X2AbilityTemplate]
 [ThreatAssessment X2AbilityTemplate]
@@ -1025,7 +1145,7 @@ LocFriendlyName="Инстинкты охотника"
 LocLongDescription="Стрельба по противникам с фланга наносит +<Ability:HUNTERSINSTINCTDMG/> урона."
 LocHelpText="Стрельба по противникам с фланга наносит +<Ability:HUNTERSINSTINCTDMG/> урона."
 LocFlyOverText="Инстинкты охотника"
-LocPromotionPopupText="<Bullet/> Стрельба по противникам с фланга наносит +<Ability:HUNTERSINSTINCTDMG/> урона."
+LocPromotionPopupText=""
 
 [HitWhereItHurts X2AbilityTemplate]
 LocFriendlyName="Смертельный выстрел"
@@ -1039,7 +1159,7 @@ LocFriendlyName="Абсолютное спокойствие"
 LocLongDescription="Вы получаете +<Ability:COOLUNDERPRESSUREBONUS/> к меткости в режиме \"наблюдения\" и при ответных выстрелах. Они могут нанести критический урон."
 LocHelpText="Повышенная меткость и шанс нанести критический урон в режиме \"наблюдения\" и при ответном огне."
 LocFlyOverText="Абсолютное спокойствие"
-LocPromotionPopupText="<Bullet/> Вы получаете +<Ability:COOLUNDERPRESSUREBONUS/> к меткости в режиме \"наблюдения\" и при ответных выстрелах. Они могут нанести критический урон.<br/>"
+LocPromotionPopupText=""
 
 [BiggestBooms X2AbilityTemplate]
 LocFriendlyName="Большой бум"
@@ -1048,7 +1168,6 @@ LocHelpText="Ваша взрывчатка может наносить крит�
 LocFlyOverText="Большой бум"
 LocPromotionPopupText="<Bullet/> Ваши атаки с использованием взрывчатых веществ могут наносить критический урон (вероятность <Ability:BIGGESTBOOMSCHANCE/>% нанести +<Ability:BIGGESTBOOMSDAMAGE/> урона).<br/>"
 
-;LWOTC Translated
 [RapidFire X2AbilityTemplate]
 LocFriendlyName="Беглый огонь"
 LocLongDescription="Дважды стреляет по противнику. Каждый выстрел со штрафом к точности <Ability:RAPIDFIREPENALTY/>. Один раз за ход."
@@ -1084,22 +1203,22 @@ LocPromotionPopupText="<Bullet/> Можно нанести удар через �
 [Obliterator_LW X2AbilityTemplate]
 LocFriendlyName="Улучшенные серво-приводы"
 LocLongDescription="+2 урона и 20 точности на все Кинетические удары. Так же даёт способность разрушения препятсвий."
-LocHelpText="+2 урона и 20 точности на все Кинетические удары."
+LocHelpText="<Bullet/> Даёт +2 к урону и +20 к меткости всех атак «Кинетическим ударом».<br/><Bullet/> «Разрушительный шар»: пока активен «Овердрайв», СПАРК может проламывать стены при перемещении."
 LocPromotionPopupText="<Bullet/> Улучшенные серво-приводы дадут +2 урона и дополнительные 20 точности на все Кинетичские удары."
 
 [RapidRepair_LW X2AbilityTemplate]
 LocFriendlyName="Быстрая починка"
-LocLongDescription="Починка больше не завершает ход, позволяя Искре починить и сделать ещё второе действие"
-LocHelpText="Починка больше не завершает ход."
+LocLongDescription="Ремонт больше не завершает ход, поэтому <Ability:ClassName> может починиться, а затем выполнить другое действие, например переместиться или выстрелить."
+LocHelpText="Ремонт больше не завершает ход <Ability:ClassName>."
 LocFlyOverText="Быстрая починка."
-LocPromotionPopupText="<Bullet/> Починка искры больше не завершает ход.<br/><Bullet/> Починка имеет 1 ход перезарядки, поэтому её нельзя сделать дважды за ход.<br/><Bullet/> Искра уверенней сражается, когда хп и броня восстановлены.<br/>"
+LocPromotionPopupText="<Bullet/> Способность ремонта <Ability:ClassName> больше не завершает ход.<br/><Bullet/> У ремонта по-прежнему перезарядка в 1 ход, поэтому его нельзя использовать дважды за один ход.<br/><Bullet/> Благодаря этому <Ability:ClassName> становится гораздо гибче в бою и может поддерживать высокий уровень здоровья и брони.<br/>"
 
 [Reboot_LW X2AbilityTemplate]
 LocFriendlyName="Перезагрузка"
-LocLongDescription="При летальном уроне Искра активирует щит с 1хп до конца хода. Срабатывает 1 раз за миссию и с последующими штрафами."
-LocHelpText="При летальном уроне Искра активирует щит с 1хп."
+LocLongDescription="Если <Ability:ClassName> получает смертельный урон, его здоровье снижается до 1 ед., а до конца хода он получает щит. Срабатывает только один раз за задание; после этого <Ability:ClassName> становится повреждённым."
+LocHelpText="Если <Ability:ClassName> получает смертельный урон, он будет защищён щитом в течение одного хода."
 LocFlyOverText="Перезагрузка"
-LocPromotionPopupText="<Bullet/> Искра получит стазис при 0 хп на каждую миссию.<br/><Bullet/> Без Аварийного питания, Искра получит штрафы к точности, мобильности и взлому.<br/><Bullet/> При таких штрафах и низком здоровье рекомендуется эвакуация по возможности.<br/><Bullet/> Комплексная технолгия аварийного обеспечения, протоколов реактивации и однозарядного щита позволят Искре выжить, чтобы потом вновь сражаться.<br/>"
+LocPromotionPopupText="<Bullet/> В первый раз за задание, когда здоровье <Ability:ClassName> опустится до нуля, он перейдёт в стазис.<br/><Bullet/> Без способности «Резервные системы» после перезапуска из-за критических повреждений <Ability:ClassName> будет выведен из строя: его меткость, мобильность и взлом резко снизятся.<br/><Bullet/> Учитывая эти недостатки и уже низкую целостность корпуса у <Ability:ClassName> в момент перезапуска, рекомендуется при первой возможности эвакуировать восстановленного <Ability:ClassName> с поля боя на «Скайрейнджере».<br/><Bullet/> Благодаря сложной системе дублирующей брони, цепей повторного запуска и одноразового проектора щита <Ability:ClassName> может принять удар на себя, зная, что ещё сможет вернуться в бой.<br/>"
 
 [RebootTriggered_LW X2AbilityTemplate]
 LocFriendlyName="Перезагрузка"
@@ -1108,31 +1227,31 @@ LocHelpText="Щит накроет цель на 1 ход при летальн�
 
 [RedundantSystems_LW X2AbilityTemplate]
 LocFriendlyName="Аварийное питание"
-LocLongDescription="Искра больше не получает штрафы после Перезагрузки."
-LocHelpText="Искра больше не получает штрафы после Перезагрузки."
+LocLongDescription="После перезапуска <Ability:ClassName> больше не получает штрафов к характеристикам."
+LocHelpText="После перезапуска <Ability:ClassName> больше не получает штрафов к характеристикам."
 LocFlyOverText="Аварийное питание"
-LocPromotionPopupText="<Bullet/> Искра больше не получает штрафы после Перезагрузки.<br/><Bullet/> Если Авайрийного питания нет, Искра получит штрафы при смертельном уроне и последующей перезагрузки.<br/>"
+LocPromotionPopupText="<Bullet/> После перезапуска <Ability:ClassName> больше не получает штрафов к характеристикам.<br/><Bullet/> Без «Резервных систем» после перезапуска из-за критических повреждений <Ability:ClassName> будет выведен из строя.<br/>"
 
 [RedunSysTriggered_LW X2AbilityTemplate]
 LocFriendlyName="Аварийное питание"
-LocLongDescription="Искра впадает в стазис с 1хп на 1 ход при смертельном уроне 1 раз за миссию."
-LocHelpText="При летальном уроне Искра активирует щит с 1хп."
+LocLongDescription="Если <Ability:ClassName> получает смертельный урон, его здоровье снижается до 1 ед., а до конца хода он получает щит. Срабатывает только один раз за задание."
+LocHelpText="Если <Ability:ClassName> получает смертельный урон, он будет защищён щитом в течение одного хода."
 LocFlyOverText="Аварийное питание"
-LocPromotionPopupText="<Bullet/> Искра получит стазис при 0 хп на каждую миссию.<br/><Bullet/> TКомплексная технолгия аварийного обеспечения, протоколов реактивации и однозарядного щита позволят Искре выжить, чтобы потом вновь сражаться.<br/>"
+LocPromotionPopupText="<Bullet/> В первый раз за задание, когда здоровье <Ability:ClassName> опустится до нуля, он перейдёт в стазис.<br/><Bullet/> Благодаря сложной системе дублирующей брони, цепей повторного запуска и одноразового проектора щита <Ability:ClassName> может принять удар на себя, зная, что ещё сможет вернуться в бой.<br/>"
 
 [HeavyRepair_LW X2AbilityTemplate]
 LocFriendlyName="Техническое обслуживание"
 LocFlyOverText="Техническое обслуживание"
 LocLongDescription="Удваивает потенциал Починки, увеличвая восстанавливаемое хп на 4."
-LocHelpText="Repair heals four extra HP each use."
-LocPromotionPopupText="<Bullet/> Починка Искры восстановит теперь 8 хп вместо 4.<br/>"
+LocHelpText="Каждое применение ремонта дополнительно восстанавливает 4 ОЗ."
+LocPromotionPopupText="<Bullet/> Теперь ремонт <Ability:ClassName> восстанавливает 8 ед. здоровья вместо 4 за одно применение.<br/>"
 
 [ConcussiveStrike_LW X2AbilityTemplate]
 LocFriendlyName="Сотрясающий удар"
 LocLongDescription="Специальный удар который наносит половину обычного урона, но оглушает цель на два очка действия. Не работает против роботов. Перезарядка 4 хода. Также уменьшает перезарядку Кинетического удара на 1."
 LocHelpText="Специальный удар который наносит половину обычного урона, но оглушает цель на два очка действия."
 LocFlyOverText="Сотрясающий удар
-LocPromotionPopupText="<Bullet/> Не работает против роботов.<br/><Bullet/> Урон сотрясающего удара 3/4/5 в зависимости от шасси.<br/><Bullet/> С Улучшенными серво-приводами урон 4/5/6 в зависимости от шасси.<br/><Bullet/> Способность ближнего боя также уменьшает перезарядку основного Кинетического удара"
+LocPromotionPopupText="<Bullet/> Сотрясающий удар нельзя применять против роботов: их процессоры не такие мягкие, как мозг.<br/><Bullet/> Урон сотрясающего удара без штурмовых сервоприводов составляет 3/4/5 в зависимости от установленного шасси.<br/><Bullet/> Урон сотрясающего удара со штурмовыми сервоприводами составляет 4/5/6 в зависимости от установленного шасси.<br/><Bullet/> Улучшенные способности ближнего боя <Ability:ClassName> также сокращают перезарядку основного кинетического удара на 1 ход."
 
 [Neutralize_LW X2AbilityTemplate]
 LocFriendlyName="Обезоруживание"
@@ -1153,7 +1272,7 @@ LocFriendlyName="Триангуляция"
 LocLongDescription="Когда атакован, <Ability:ClassName/> дает бонус 10 точности для отряда по атаковавшему на следующий ход."
 LocHelpText="Когда атакован, <Ability:ClassName/> дает бонус 10 точности для отряда по атаковавшему на следующий ход."
 LocFlyOverText="Триангуляция"
-LocPromotionPopupText="<Bullet/> <Ability:ClassName/> может дать информацию о цели для отряда, отследя траекторию атаки, которая была на него направлена.<br/><Bullet/> Триангуляция не работает, если атаковали союзника.<br/>"
+LocPromotionPopupText="<Bullet/> <Ability:ClassName/> может определить источник летящего боеприпаса и передать эту информацию всему отряду.<br/><Bullet/> «Триангуляция» не срабатывает, если враг атакует одного из союзников <Ability:ClassName/>.<br/>"
 
 [TriangulationTrigger_LW X2AbilityTemplate]
 LocFriendlyName="Триангуляция"
@@ -1166,27 +1285,27 @@ LocFriendlyName="Ударник"
 LocLongDescription=" <Ability:ClassName/> наносит свободны удары по врагам на дистанции ближнего боя с половинным уроном. Не требует способности Кинетический удар. Не работает на своём ходу."
 LocHelpText="Свободные атаки в ближнем бою."
 LocFlyOverText="Ударник"
-LocPromotionPopupText="<Bullet/> Срабывает если враг заходит на соседнюю клетку, или собирается атаковать с соседней клетки.<br/><Bullet/> Если враг начинает ход с соседней клетки и отбегает прямо от Искры способность НЕ сработает.<br/><Bullet/> Ударник наносит половину от обычного урона Кинетического удара, бонус урона от улучшенных серво-приводов 1.<br/><Bullet/> Не работает в свой ход."
+LocPromotionPopupText="<Bullet/> Если враг начинает ход на соседней клетке, контрудар срабатывает, когда он перемещается на другую соседнюю клетку или пытается атаковать <Ability:ClassName/>.<br/><Bullet/> Если враг начинает ход не рядом, контрудар срабатывает, когда тот входит в радиус ближнего боя.<br/><Bullet/> Если враг начинает ход на соседней клетке, контрудар НЕ сработает, если он отходит прямо от <Ability:ClassName/>.<br/><Bullet/> Контрудар наносит половину урона обычного кинетического удара и получает +1 к урону от штурмовых сервоприводов.<br/><Bullet/> Не может активироваться в ход самого <Ability:ClassName/>."
 
 [BrawlerTrigger_LW X2AbilityTemplate]
 LocFriendlyName="Ударник"
 LocLongDescription="<Ability:ClassName/> наносит свободны удары по врагам на дистанции ближнего боя с половинным уроном. Не требует способности Кинетический удар. Не работает на своём ходу."
 LocHelpText="Свободные атаки в ближнем бою."
 LocFlyOverText="Ударник"
-LocPromotionPopupText="<Bullet/> Срабывает если враг заходит на соседнюю клетку, или собирается атаковать с соседней клетки.<br/><Bullet/> Если враг начинает ход с соседней клетки и отбегает прямо от Искры способность НЕ сработает.<br/><Bullet/> Ударник наносит половину от обычного урона Кинетического удара, бонус урона от улучшенных серво-приводов 1.<br/><Bullet/> Не работает в свой ход."
+LocPromotionPopupText="<Bullet/> Если враг начинает ход на соседней клетке, контрудар срабатывает, когда он перемещается на другую соседнюю клетку или пытается атаковать <Ability:ClassName/>.<br/><Bullet/> Если враг начинает ход не рядом, контрудар срабатывает, когда тот входит в радиус ближнего боя.<br/><Bullet/> Если враг начинает ход на соседней клетке, контрудар НЕ сработает, если он отходит прямо от <Ability:ClassName/>.<br/><Bullet/> Контрудар наносит половину урона обычного кинетического удара и получает +1 к урону от штурмовых сервоприводов.<br/><Bullet/> Не может активироваться в ход самого <Ability:ClassName/>."
 
 
 [EnhancedSystems_LW X2AbilityTemplate]
 LocFriendlyName="Набор запчастей"
-LocLongDescription="Предоставляет быструю починку и Аварийное питание, убирая штрафы связанные с перезагрузкой. Искра автоматически использует починку после перезагрузки. Дополнительно даёт 1 заряд починки."
-LocHelpText="Быстрая починка не завершает ход. Аварийное питание убирает штрафы статов после перезагрузки. Искра автоматически использует починку после перезагрузки."
-LocPromotionPopupText="Быстрая починка не завершает ход. Аварийное питание убирает штрафы статов после перезагрузки. Искра автоматически использует починку после перезагрузки. Дополнительно даёт 1 заряд починки."
+LocLongDescription="Предоставляет быструю починку и Аварийное питание, убирая штрафы связанные с перезагрузкой. Искра автоматически использует починку после перезагрузки. Дополнительно даёт <Ability:ClassName> заряд починки."
+LocHelpText="«Быстрый ремонт» позволяет ремонтировать без завершения хода. «Резервные системы» избавляют <Ability:ClassName> от штрафов к характеристикам после перезапуска. При перезапуске <Ability:ClassName> автоматически применяет ремонт."
+LocPromotionPopupText="«Быстрый ремонт» позволяет ремонтировать без завершения хода. «Резервные системы» избавляют <Ability:ClassName> от штрафов к характеристикам после перезапуска. При перезапуске <Ability:ClassName> автоматически применяет ремонт. Кроме того, ремонт получает один дополнительный заряд."
 
 [ReactionSystems_LW X2AbilityTemplate]
 LocFriendlyName="Защитник"
-LocLongDescription="Добавляет пожертвование и поглощение энергии, позволяя Искре перенаправлять на себя атаки по союзникам и накапливать энергию ударов, увеличивая свой урон."
-LocHelpText="<Bullet/> Искра получает +<Ability:Sacrifice_Defense/> защиты и +<Ability:Sacrifice_Armor/> брони пока пожертвование активно.<br/><Bullet/> Пожертвование имеет ходов перезарядки: <Ability:SACRIFICE_COOLDOWN/>.<br/><Bullet/> Каждая единица энергии полученная поглощением энергии увеличивает следущую атаку оружием <Ability:WeaponName> на 1.<br/>"
-LocPromotionPopupText="<Bullet/> Искра получает +<Ability:Sacrifice_Defense/> защиты и +<Ability:Sacrifice_Armor/> брони пока пожертвование активно.<br/><Bullet/> Пожертвование имеет ходов перезарядки: <Ability:SACRIFICE_COOLDOWN/>.<br/><Bullet/> Каждая единица энергии полученная поглощением энергии увеличивает следущую атаку оружием <Ability:WeaponName> на 1.<br/>"
+LocLongDescription="Даёт способности «Жертва» и «Поле перенаправления», позволяющие <Ability:ClassName> перенаправлять на себя атаки по ближайшим союзникам и увеличивать урон <Ability:ClassName> после любой направленной на него атаки."
+LocHelpText="<Bullet/> Искра получает +<Ability:Sacrifice_Defense/> защиты и +<Ability:Sacrifice_Armor/> брони пока пожертвование активно.<br/><Bullet/> Пожертвование имеет ходов перезарядки: <Ability:SACRIFICE_COOLDOWN/>.<br/><Bullet/> Каждая единица энергии полученная поглощением энергии увеличивает следущую атаку оружием <Ability:WeaponName> на <Ability:ClassName>.<br/>"
+LocPromotionPopupText="<Bullet/> Искра получает +<Ability:Sacrifice_Defense/> защиты и +<Ability:Sacrifice_Armor/> брони пока пожертвование активно.<br/><Bullet/> Пожертвование имеет ходов перезарядки: <Ability:SACRIFICE_COOLDOWN/>.<br/><Bullet/> Каждая единица энергии полученная поглощением энергии увеличивает следущую атаку оружием <Ability:WeaponName> на <Ability:ClassName>.<br/>"
 
 [AdvancedLogic_LW X2AbilityTemplate]
 LocFriendlyName="Вычислительный модуль"
@@ -1196,9 +1315,9 @@ LocPromotionPopupText="<Ability:ClassName/> увеличивает взлом н
 
 [HoloAACombo_LW X2AbilityTemplate]
 LocFriendlyName="Системы вооружения"
-LocLongDescription="Добавляет Адаптивное прицеливание и Голографическую метку, улучшая потенциал выстрелов Искры в режиме Овердрайв. Голографическое прицеливание работает всегда, не только в режиме Овердрайв."
-LocHelpText="Добавляет Адаптивное прицеливание и Голографическую метку, улучшая потенциал выстрелов Искры в режиме Овердрайв. Голографическое прицеливание работает всегда, не только в режиме Овердрайв."
-LocPromotionPopupText="Добавляет Адаптивное прицеливание и Голографическую метку, улучшая потенциал выстрелов Искры в режиме Овердрайв. Голографическое прицеливание работает всегда, не только в режиме Овердрайв."
+LocLongDescription="Даёт способности «Адаптивное прицеливание» и «Голографическое наведение»: <Ability:ClassName> может эффективнее стрелять несколько раз во время действия «Форсажа», а отряду становится легче попадать по целям, в которые стреляет <Ability:ClassName>. Голографическое наведение действует на все выстрелы, а не только на выстрелы во время «Форсажа»."
+LocHelpText="Даёт способности «Адаптивное прицеливание» и «Голографическое наведение»: <Ability:ClassName> может эффективнее стрелять несколько раз во время действия «Форсажа», а отряду становится легче попадать по целям, в которые стреляет <Ability:ClassName>. Голографическое наведение действует на все выстрелы, а не только на выстрелы во время «Форсажа»."
+LocPromotionPopupText="Даёт способности «Адаптивное прицеливание» и «Голографическое наведение»: <Ability:ClassName> может эффективнее стрелять несколько раз во время действия «Форсажа», а отряду становится легче попадать по целям, в которые стреляет <Ability:ClassName>. Голографическое наведение действует на все выстрелы, а не только на выстрелы во время «Форсажа»."
 
 ; New Class loc
 
@@ -1207,6 +1326,7 @@ RankNames[8]="Магистр"
 ShortNames[8]="Мгст."
 RankIcons[8]="UILibrary_LW_PerkPack.psirank_Master"
 AbilityTreeTitles[3]="Пистолеты"
+
 
 ; plot type loc since sewer and subway can be combined now.
 
