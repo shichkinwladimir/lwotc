@@ -36,7 +36,7 @@ strCommandRangeToggleTooltip="Щелкните, чтобы показать ил
 m_strSelectAbility="ВЫБЕРИТЕ СПОСОБНОСТЬ:"
 m_strAbilityHeader="СПОСОБНОСТИ:"
 m_strConfirmAbilityTitle="ПОДТВЕРДИТЕ ВЫБОР СПОСОБНОСТИ"
-m_strConfirmAbilityText="Вы не сможете удалить или изменить способности. Вы уверены, что хотите изучить способность \"<XGParam:StrValue0/>\"?"
+m_strConfirmAbilityText="Вы не сможете удалить или изменить способности. Вы уверены, что хотите изучить способность <XGParam:StrValue0/>?"
 m_strAbilityLockedTitle="НЕДОСТУПНО"
 m_strAbilityLockedDescription="Зарабатывайте боевой опыт, чтобы изучить новые способности."
 
